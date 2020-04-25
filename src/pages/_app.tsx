@@ -31,6 +31,15 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
           margin: 0;
           padding: 0;
         }
+
+        a {
+          color: #007aff;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #4ca1fe;
+        }
       `}</style>
     </>
   );
