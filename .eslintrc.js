@@ -28,6 +28,9 @@ module.exports = {
     'prettier/react',
   ],
   rules: {
+    // components/Emoji provides accessible emojis
+    'jsx-a11y/accessible-emoji': 'off',
+
     'react/react-in-jsx-scope': 'off',
   },
   settings: {
