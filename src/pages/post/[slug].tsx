@@ -1,6 +1,5 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
-import {getAllPostSlugs, findBySlug} from '../../posts';
-import {Post as PostType} from '../../types';
+import {Post as PostType, getAllPostSlugs, findBySlug} from '../../posts';
 import {Layout, Markdown} from '../../components';
 import {formatPubDate} from '../../utils';
 

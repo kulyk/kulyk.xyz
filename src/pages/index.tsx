@@ -1,6 +1,5 @@
 import {NextPage, GetStaticProps} from 'next';
-import {Post} from '../types';
-import {getAllPosts} from '../posts';
+import {Post, getAllPosts} from '../posts';
 import {useTheme} from '../theming';
 import {Emoji, Layout, Link} from '../components';
 import {formatPubDate} from '../utils';

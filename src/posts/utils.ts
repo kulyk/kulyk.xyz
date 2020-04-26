@@ -2,7 +2,7 @@ import path from 'path';
 import glob from 'glob';
 import matter from 'gray-matter';
 import {compareDesc, parseISO} from 'date-fns';
-import {Post} from '../types';
+import {Post} from './Post';
 
 type ParsedPost = {
   post: Post;
