@@ -16,7 +16,7 @@ Despite their potential age and low reproductive rate, bristlecone pines, partic
 
 ## Example
 
-![bali-monkey](/demo.jpg)
+![demo-image](/demo.jpg)
 
 ## Headline 2
 
@@ -43,11 +43,9 @@ class Cat extends Animal {
 
 Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
 
-- List Item 1
-- List Item 2
-- List Item 3
-- List Item 4
-- List Item 5
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
 
 Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
 
@@ -58,3 +56,13 @@ Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Su
 5. List Item 5
 
 Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6

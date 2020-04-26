@@ -64,6 +64,15 @@ function Page(props: PageProps): React.ReactElement {
           background-color: ${theme.button.background};
         }
 
+        code {
+          font-family: 'Lucida Console', Monaco, monospace;
+          font-size: 0.8rem;
+        }
+
+        li {
+          color: ${theme.text.main};
+        }
+
         button:hover {
           background-color: ${theme.button.hover};
         }

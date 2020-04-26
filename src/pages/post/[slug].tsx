@@ -1,8 +1,7 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
-import ReactMarkdown from 'react-markdown';
 import {findBySlug} from '../../posts';
 import {Post as PostType} from '../../types';
-import {Layout} from '../../components';
+import {Layout, Markdown} from '../../components';
 import {formatPubDate} from '../../utils';
 import POSTS from '../../fakePosts';
 
@@ -24,7 +23,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
           <p className="secondary">{publishedAt}</p>
         </div>
         <article id="post">
-          <ReactMarkdown source={content} />
+          <Markdown content={content} />
         </article>
       </Layout>
       <style jsx>{`
