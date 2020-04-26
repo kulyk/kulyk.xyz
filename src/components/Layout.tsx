@@ -17,6 +17,16 @@ function getPageTitle(title?: string): string {
   return `${base} — ${title}`;
 }
 
+const favicon = [
+  'data:image/svg+xml,',
+  '<svg xmlns=%22http://www.w3.org/2000/svg%22 ',
+  'viewBox=%220 0 100 100%22>',
+  '<text y=%22.9em%22 font-size=%2290%22>',
+  '🤖',
+  '</text>',
+  '</svg>',
+].join('');
+
 function Layout(props: LayoutProps): React.ReactElement {
   const {title, description, children} = props;
   const {theme} = useTheme();
@@ -26,6 +36,7 @@ function Layout(props: LayoutProps): React.ReactElement {
         <title>{getPageTitle(title)}</title>
         {description && <meta name="description" content={description} />}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href={favicon} />
       </Head>
       <div id="layout">
         <NavBar />
