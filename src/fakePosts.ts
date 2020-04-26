@@ -8,13 +8,13 @@ const POSTS: Post[] = [
       'How I optimize my tools and',
       'workflows for software development',
     ].join(' '),
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-04-25T23:18:17.522Z',
   },
   {
     id: '2',
     title: '🔨 Code Quality from the Day One',
     description: 'Tools and Workflows to Keep Your Tech Dept Low',
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-04-24T23:18:17.522Z',
   },
   {
     id: '3',
@@ -23,7 +23,7 @@ const POSTS: Post[] = [
       'Why Good Software Engineers',
       'delete code, rather than write',
     ].join(' '),
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-04-16T23:18:17.522Z',
   },
   {
     id: '4',
@@ -32,7 +32,7 @@ const POSTS: Post[] = [
       'Best Practices and Design Patterns',
       'We Forgot for Some Reason',
     ].join(' '),
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-04-05T23:18:17.522Z',
   },
   {
     id: '6',
@@ -41,27 +41,27 @@ const POSTS: Post[] = [
       'A tale of the most tricky bugs',
       'for beginner developers',
     ].join(' '),
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-03-27T23:18:17.522Z',
   },
   {
     id: '7',
     title: '📈 Optimizing React Native Apps',
     description: 'Measuring, Improving and Measuring',
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-03-14T23:18:17.522Z',
   },
 
   {
     id: '8',
-    title: '⚙ How to Automate Frontend Development',
+    title: '👨‍🚀 How to Automate Frontend Development',
     description: '100 Reasons I Love Netlify',
-    publishedAt: new Date().toISOString(),
+    publishedAt: '2020-02-18T23:18:17.522Z',
   },
 
   {
     id: '9',
-    title: '⚙ You Must Give GitHub Actions a Try',
-    description: 'Automatic Common Workflows',
-    publishedAt: new Date().toISOString(),
+    title: '🍻 You Must Give GitHub Actions a Try',
+    description: 'Automating Common Workflows',
+    publishedAt: '2020-01-29T23:18:17.522Z',
   },
 ];
 

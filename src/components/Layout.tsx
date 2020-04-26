@@ -16,12 +16,13 @@ function Layout(props: LayoutProps): React.ReactElement {
         #layout {
           max-width: 800px;
           margin: auto;
+          padding-bottom: 50px;
         }
         #content-root {
           display: 'flex';
           flex: 1;
           justify-content: center;
-          margin-top: 60px;
+          margin-top: 40px;
         }
       `}</style>
     </>
