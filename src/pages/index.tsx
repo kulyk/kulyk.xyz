@@ -9,7 +9,11 @@ function Intro(): React.ReactElement {
     <section>
       <p className="intro">
         Hi, I&apos;m Anton <Emoji name="wave">👋</Emoji> I&apos;m a full-stack
-        software engineer currently leading the software team at{' '}
+        software engineer from Kyiv, Ukraine{' '}
+        <Emoji name="Ukraine flag">🇺🇦</Emoji>.
+      </p>
+      <p className="intro">
+        Currently leading the software team at{' '}
         <a href="https://pix.style" target="_blank" rel="noopener noreferrer">
           Pix
         </a>
@@ -17,7 +21,7 @@ function Intro(): React.ReactElement {
         screens you can control with your phone.
       </p>
       <p className="intro">
-        Here I write about better ways to build software I found while coding,
+        Here I write about better ways to build software I find while coding,
         learning and talking to other people. Primarily I work with React, React
         Native and Node.js. Here is my{' '}
         <a
@@ -30,7 +34,8 @@ function Intro(): React.ReactElement {
       </p>
       <p className="intro">
         If you want to get in touch,{' '}
-        <a href="mailto:kuliks.anton@gmail.com">send me an email</a>.
+        <a href="mailto:kuliks.anton@gmail.com">send me an email</a> or ping me
+        on <a href="https://twitter.com/kkkulyk">Twitter</a>.
       </p>
       <style jsx>{`
         .intro {
