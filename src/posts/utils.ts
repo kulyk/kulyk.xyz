@@ -22,12 +22,12 @@ function filePathToSlug(filePath: string): string {
 }
 
 export async function findBySlug(slug: string): Promise<ParsedPost> {
-  const file = await import(`./${slug}.md`);
+  const file = await import(`./content/${slug}.md`);
   return readPost(file.default);
 }
 
 export function getAllPostSlugs(): string[] {
-  const postPaths = glob.sync('./src/posts/**.md');
+  const postPaths = glob.sync('./src/posts/**/*.md');
   return postPaths.map(filePathToSlug);
 }
 
