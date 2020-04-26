@@ -1,9 +1,8 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
-import {findBySlug} from '../../posts';
+import {getAllPostSlugs, findBySlug} from '../../posts';
 import {Post as PostType} from '../../types';
 import {Layout, Markdown} from '../../components';
 import {formatPubDate} from '../../utils';
-import POSTS from '../../fakePosts';
 
 type PostPageProps = {
   post: PostType;
@@ -52,13 +51,13 @@ type UrlQuery = {
 };
 
 export const getStaticPaths: GetStaticPaths<UrlQuery> = async () => {
-  const slugs = POSTS.map(post => ({
-    params: {
-      slug: post.slug,
-    },
+  const slugs = getAllPostSlugs();
+  console.log('SLUGS', slugs);
+  const paths = slugs.map(slug => ({
+    params: {slug},
   }));
   return {
-    paths: slugs,
+    paths,
     fallback: false,
   };
 };

@@ -1,8 +1,8 @@
 ---
-title: My Work Setup
-emoji: 👨‍💻
-slug: my-work-setup
-description: How I optimize my tools and workflows for software development
+title: You Must Give GitHub Actions a Try
+emoji: 🍻
+slug: you-must-give-github-actions-a-try
+description: Automating Common Workflows
 publishedAt: '2020-04-25T23:18:17.522Z'
 ---
 
@@ -13,6 +13,10 @@ The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest k
 ## Headline
 
 Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
 
 ## Headline 2
 

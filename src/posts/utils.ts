@@ -1,3 +1,5 @@
+import path from 'path';
+import glob from 'glob';
 import matter from 'gray-matter';
 import {Post} from '../types';
 
@@ -13,4 +15,13 @@ export async function findBySlug(slug: string): Promise<FindResult> {
     post: data as Post,
     content,
   };
+}
+
+function filePathToSlug(filePath: string): string {
+  return path.basename(filePath, '.md');
+}
+
+export function getAllPostSlugs(): string[] {
+  const postPaths = glob.sync('./src/posts/**.md');
+  return postPaths.map(filePathToSlug);
 }

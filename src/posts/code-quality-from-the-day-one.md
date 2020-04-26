@@ -1,9 +1,9 @@
 ---
-title: My Work Setup
-emoji: 👨‍💻
-slug: my-work-setup
-description: How I optimize my tools and workflows for software development
-publishedAt: '2020-04-25T23:18:17.522Z'
+title: Code Quality from the Day One
+emoji: 🔨
+slug: code-quality-from-the-day-one
+description: Tools and Workflows to Keep Your Tech Dept Low
+publishedAt: '2020-04-24T23:18:17.522Z'
 ---
 
 The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
@@ -13,6 +13,10 @@ The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest k
 ## Headline
 
 Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
 
 ## Headline 2
 
