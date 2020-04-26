@@ -1,8 +1,15 @@
 import Link from './Link';
 import {useTheme} from '../theming';
 
-function NavBar(): React.ReactElement {
+type Props = {
+  width: string;
+  height: string;
+  backgroundColor: string;
+};
+
+function NavBar(props: Props): React.ReactElement {
   const {isLight, toggle} = useTheme();
+  const {width, height, backgroundColor} = props;
   return (
     <>
       <nav id="nav">
@@ -15,9 +22,18 @@ function NavBar(): React.ReactElement {
       <style jsx global>{`
         #nav {
           display: flex;
-          height: 60px;
+          height: ${height};
           justify-content: space-between;
           align-items: center;
+          position: fixed;
+          max-width: ${width};
+          padding: 0 1.5rem;
+          background-color: ${backgroundColor};
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 60;
         }
         #home-link {
           display: flex;

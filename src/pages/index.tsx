@@ -51,7 +51,7 @@ function Intro(): React.ReactElement {
           margin-top: 1rem;
         }
         .intro:first-child {
-          margin-top: 30px;
+          margin-top: 0;
         }
       `}</style>
     </section>

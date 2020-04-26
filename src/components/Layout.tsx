@@ -1,3 +1,4 @@
+import {useTheme} from '../theming';
 import Page, {PageProps} from './Page';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -12,13 +13,23 @@ const defaultProps = {
   hasFooter: true,
 };
 
+const NAV_BAR_HEIGHT = 60;
+const WIDTH = '800px';
+
 function Layout(props: LayoutProps): React.ReactElement {
   const {children, hasNavBar, hasFooter, ...pageProps} = props;
+  const {theme} = useTheme();
   return (
     <>
       <Page {...pageProps}>
         <div id="layout">
-          {hasNavBar && <NavBar />}
+          {hasNavBar && (
+            <NavBar
+              width={WIDTH}
+              height={`${NAV_BAR_HEIGHT}px`}
+              backgroundColor={theme.background.main}
+            />
+          )}
           <main id="content-root">{children}</main>
           {hasFooter && <Footer />}
         </div>
@@ -28,7 +39,7 @@ function Layout(props: LayoutProps): React.ReactElement {
           display: flex;
           flex-direction: column;
           min-height: 95vh;
-          max-width: 800px;
+          max-width: ${WIDTH};
           margin: auto;
           padding: 0 1.5rem 20px 1.5rem;
         }
@@ -37,7 +48,7 @@ function Layout(props: LayoutProps): React.ReactElement {
           display: flex;
           flex-direction: column;
           flex: 1;
-          margin-top: 40px;
+          margin-top: ${30 + NAV_BAR_HEIGHT}px;
         }
       `}</style>
     </>
