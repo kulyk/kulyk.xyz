@@ -74,7 +74,7 @@ function Layout(props: LayoutProps): React.ReactElement {
         #layout {
           max-width: 800px;
           margin: auto;
-          padding: 0 10px 50px 10px;
+          padding: 0 1.5rem 50px 1.5rem;
         }
         #content-root {
           display: 'flex';
