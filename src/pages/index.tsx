@@ -57,7 +57,7 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
     <>
       <Link href={`/post/${slug}`}>
         <div className="article-preview">
-          <div>
+          <div className="article-preview-main">
             <h2 className="title">{`${emoji} ${title}`}</h2>
             <p className="secondary description">{description}</p>
           </div>
@@ -75,6 +75,9 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
         .article-preview:hover {
           background-color: rgba(0, 0, 0, 0.05);
           cursor: pointer;
+        }
+        .article-preview-main {
+          flex: 0.9;
         }
         .title {
           font-weight: 500;
