@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-autofocus */
+
 import Terminal from 'react-console-emulator';
 import {Emoji, Layout} from '../components';
 
