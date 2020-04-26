@@ -111,7 +111,7 @@ type ArticlesBlockProps = {
 
 function Articles(props: ArticlesBlockProps): React.ReactElement {
   const renderPreview = (post: Post): React.ReactElement => (
-    <ArticlePreview key={post.id} post={post} />
+    <ArticlePreview key={post.slug} post={post} />
   );
 
   return (

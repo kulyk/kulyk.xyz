@@ -11,7 +11,6 @@ function addSlug(post: Omit<Post, 'slug'>): Post {
 
 const POSTS: Post[] = [
   {
-    id: '1',
     title: 'My Work Setup',
     emoji: '👨‍💻',
     description: [
@@ -21,14 +20,12 @@ const POSTS: Post[] = [
     publishedAt: '2020-04-25T23:18:17.522Z',
   },
   {
-    id: '2',
     title: 'Code Quality from the Day One',
     emoji: '🔨',
     description: 'Tools and Workflows to Keep Your Tech Dept Low',
     publishedAt: '2020-04-24T23:18:17.522Z',
   },
   {
-    id: '3',
     title: 'Less Code is More',
     emoji: '✨',
     description: [
@@ -38,7 +35,6 @@ const POSTS: Post[] = [
     publishedAt: '2020-04-16T23:18:17.522Z',
   },
   {
-    id: '4',
     title: 'Writing Decoupled React Apps',
     emoji: '👽',
     description: [
@@ -48,7 +44,6 @@ const POSTS: Post[] = [
     publishedAt: '2020-04-05T23:18:17.522Z',
   },
   {
-    id: '6',
     title: 'Values and References in JavaScript',
     emoji: '🐞',
     description: [
@@ -58,7 +53,6 @@ const POSTS: Post[] = [
     publishedAt: '2020-03-27T23:18:17.522Z',
   },
   {
-    id: '7',
     title: 'Optimizing React Native Apps',
     emoji: '📈',
     description: 'Measuring, Improving and Measuring',
@@ -66,7 +60,6 @@ const POSTS: Post[] = [
   },
 
   {
-    id: '8',
     title: 'You Must Give GitHub Actions a Try',
     emoji: '🍻',
     description: 'Automating Common Workflows',

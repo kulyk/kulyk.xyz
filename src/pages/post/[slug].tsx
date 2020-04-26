@@ -1,32 +1,47 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
+import ReactMarkdown from 'react-markdown';
+import {findBySlug} from '../../posts';
 import {Post as PostType} from '../../types';
 import {Layout} from '../../components';
 import {formatPubDate} from '../../utils';
-import POSTS, {findBySlug} from '../../fakePosts';
+import POSTS from '../../fakePosts';
 
 type PostPageProps = {
   post: PostType;
+  content: string;
 };
 
 const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
-  const {title, description} = props.post;
-  const publishedAt = formatPubDate(props.post.publishedAt);
+  const {post, content} = props;
+  const {title, description} = post;
+  const publishedAt = formatPubDate(post.publishedAt);
   return (
     <>
       <Layout title={title} description={description}>
         <h1>{title}</h1>
         <div className="about-article">
-          <h3 className="secondary">{description}</h3>
+          <h3 className="description secondary">{description}</h3>
           <p className="secondary">{publishedAt}</p>
         </div>
+        <article id="post">
+          <ReactMarkdown source={content} />
+        </article>
       </Layout>
       <style jsx>{`
         .about-article {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          align-items: center;
-          margin-top: 16px;
+          margin-top: 12px;
+        }
+
+        .description {
+          display: flex;
+          flex: 0.9;
+        }
+
+        #post {
+          margin-top: 20px;
         }
       `}</style>
     </>
@@ -57,8 +72,8 @@ export const getStaticProps: GetStaticProps<
   if (!slug) {
     throw new Error('Post not found');
   }
-  const post = findBySlug(slug);
-  return {props: {post}};
+  const {post, content} = await findBySlug(slug);
+  return {props: {post, content}};
 };
 
 export default Post;
