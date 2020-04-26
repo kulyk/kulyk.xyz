@@ -1,5 +1,15 @@
 import {Post} from './types';
 
+function addSlug(post: Omit<Post, 'slug'>): Post {
+  const withoutEmoji = post.title.split(' ').slice(1);
+  const lowercase = withoutEmoji.map(word => word.toLowerCase());
+  const slug = lowercase.join('-');
+  return {
+    ...post,
+    slug,
+  };
+}
+
 const POSTS: Post[] = [
   {
     id: '1',
@@ -63,6 +73,11 @@ const POSTS: Post[] = [
     description: 'Automating Common Workflows',
     publishedAt: '2020-01-29T23:18:17.522Z',
   },
-];
+].map(addSlug);
+
+export function findBySlug(slug: string): Post {
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  return POSTS.find(p => p.slug === slug)!;
+}
 
 export default POSTS;
