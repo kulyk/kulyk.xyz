@@ -1,6 +1,7 @@
 import {AppProps} from 'next/app';
 
 const fonts = [
+  '-apple-system',
   'BlinkMacSystemFont',
   "'Helvetica Neue'",
   "'Helvetica'",
@@ -30,6 +31,7 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
         p {
           margin: 0;
           padding: 0;
+          font-family: ${fonts.join(', ')};
         }
 
         a {
