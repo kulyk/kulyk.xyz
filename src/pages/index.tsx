@@ -10,7 +10,7 @@ function Intro(): React.ReactElement {
       <p className="intro">
         Hi, I&apos;m Anton <Emoji name="wave">👋</Emoji> I&apos;m a full-stack
         software engineer from Kyiv, Ukraine{' '}
-        <Emoji name="Ukraine flag">🇺🇦</Emoji>.
+        <Emoji name="Ukraine flag">🇺🇦</Emoji>
       </p>
       <p className="intro">
         Currently leading the software team at{' '}
