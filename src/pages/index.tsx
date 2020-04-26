@@ -1,9 +1,9 @@
 import {NextPage, GetStaticProps} from 'next';
 import {Post} from '../types';
+import {getAllPosts} from '../posts';
 import {useTheme} from '../theming';
 import {Emoji, Layout, Link} from '../components';
 import {formatPubDate} from '../utils';
-import FAKE_POSTS from '../fakePosts';
 
 function Intro(): React.ReactElement {
   return (
@@ -144,10 +144,9 @@ const Home: NextPage<HomePageProps> = (props: HomePageProps) => (
 );
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
+  const posts = await getAllPosts();
   return {
-    props: {
-      posts: FAKE_POSTS,
-    },
+    props: {posts},
   };
 };
 

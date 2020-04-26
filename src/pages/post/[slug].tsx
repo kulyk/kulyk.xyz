@@ -52,7 +52,6 @@ type UrlQuery = {
 
 export const getStaticPaths: GetStaticPaths<UrlQuery> = async () => {
   const slugs = getAllPostSlugs();
-  console.log('SLUGS', slugs);
   const paths = slugs.map(slug => ({
     params: {slug},
   }));
