@@ -24,7 +24,7 @@ const EMOJI_LIST: FooterEmoji[] = [
 ];
 
 function getRandomEmoji(): FooterEmoji {
-  const index = getRandomInt(0, EMOJI_LIST.length);
+  const index = getRandomInt(0, EMOJI_LIST.length - 1);
   return EMOJI_LIST[index];
 }
 
