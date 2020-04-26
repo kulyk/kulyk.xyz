@@ -5,7 +5,7 @@ function NavBar(): React.ReactElement {
     <>
       <nav id="nav">
         <Link id="home-link" href="/">
-          <img id="my-photo" src="/me.jpg" alt="Anton" />
+          <img id="my-photo" src="/me-min.jpg" alt="Anton" />
           <h3 id="my-name">Anton Kulyk</h3>
         </Link>
       </nav>
