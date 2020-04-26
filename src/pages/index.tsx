@@ -1,5 +1,6 @@
 import {NextPage, GetStaticProps} from 'next';
 import {Post} from '../types';
+import {useTheme} from '../theming';
 import {Emoji, Layout, Link} from '../components';
 import {formatPubDate} from '../utils';
 import FAKE_POSTS from '../fakePosts';
@@ -51,7 +52,7 @@ function Intro(): React.ReactElement {
           margin-top: 1rem;
         }
         .intro:first-child {
-          margin-top: 0;
+          margin-top: 30px;
         }
       `}</style>
     </section>
@@ -65,6 +66,7 @@ type ArticlePreviewProps = {
 function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
   const {title, description, emoji, slug} = props.post;
   const publishedAt = formatPubDate(props.post.publishedAt);
+  const {theme} = useTheme();
   return (
     <>
       <Link href={`/post/${slug}`}>
@@ -85,7 +87,7 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
           margin: 8px 0 8px 0;
         }
         .article-preview:hover {
-          background-color: rgba(0, 0, 0, 0.05);
+          background-color: ${theme.background.hover};
           cursor: pointer;
         }
         .article-preview-main {
