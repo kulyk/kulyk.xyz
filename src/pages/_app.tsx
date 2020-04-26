@@ -1,4 +1,5 @@
 import {AppProps} from 'next/app';
+import {ThemeProvider} from '../theming';
 
 const fonts = [
   '-apple-system',
@@ -12,14 +13,15 @@ const fonts = [
 function App({Component, pageProps}: AppProps): React.ReactElement {
   return (
     <>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
       <style jsx global>{`
-        .html,
-        .body {
+        html,
+        body {
           margin: 0;
           padding: 0;
           font-family: ${fonts.join(', ')};
-          background-color: #fff;
         }
 
         h1,
@@ -31,20 +33,17 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
         p {
           margin: 0;
           padding: 0;
-          font-family: ${fonts.join(', ')};
         }
 
         a {
-          color: #007aff;
           text-decoration: none;
         }
 
-        a:hover {
-          color: #4ca1fe;
-        }
-
-        .secondary {
-          color: rgba(0, 0, 0, 0.6);
+        button {
+          border-style: none;
+          padding: 5px 10px;
+          font-size: 1rem;
+          border-radius: 5px;
         }
       `}</style>
     </>

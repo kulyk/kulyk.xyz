@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import {useTheme} from '../theming';
 import NavBar from './NavBar';
 
 interface LayoutProps {
@@ -17,6 +18,7 @@ function getPageTitle(title?: string): string {
 
 function Layout(props: LayoutProps): React.ReactElement {
   const {title, description, children} = props;
+  const {theme} = useTheme();
   return (
     <>
       <Head>
@@ -29,6 +31,46 @@ function Layout(props: LayoutProps): React.ReactElement {
         <main id="content-root">{children}</main>
       </div>
       <style jsx global>{`
+        html,
+        body {
+          background-color: ${theme.background};
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          color: ${theme.text.main};
+        }
+
+        a {
+          color: ${theme.link.default};
+        }
+
+        button {
+          color: ${theme.button.text};
+          background-color: ${theme.button.background};
+        }
+
+        button:hover {
+          background-color: ${theme.button.hover};
+        }
+
+        a:hover {
+          color: ${theme.link.hover};
+        }
+
+        .page-link {
+          color: ${theme.link.default};
+        }
+
+        .secondary {
+          color: ${theme.text.secondary};
+        }
+
         #layout {
           max-width: 800px;
           margin: auto;

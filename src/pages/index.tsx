@@ -82,7 +82,6 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
         .title {
           font-weight: 500;
           font-size: 1.2rem;
-          color: black;
         }
         .description {
           margin-top: 3px;

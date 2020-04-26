@@ -13,7 +13,7 @@ module.exports = {
     browser: true,
     node: true,
   },
-  plugins: ['import', 'jsx-a11y', 'sonarjs', 'react'],
+  plugins: ['import', 'jsx-a11y', 'sonarjs', 'react', 'react-hooks'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -26,6 +26,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
     'prettier/react',
+    'plugin:react-hooks/recommended',
   ],
   rules: {
     // components/Emoji provides accessible emojis

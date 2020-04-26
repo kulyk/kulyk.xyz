@@ -1,6 +1,8 @@
 import Link from './Link';
+import {useTheme} from '../theming';
 
 function NavBar(): React.ReactElement {
+  const {isLight, toggle} = useTheme();
   return (
     <>
       <nav id="nav">
@@ -8,11 +10,13 @@ function NavBar(): React.ReactElement {
           <img id="my-photo" src="/me-min.jpg" alt="Anton" />
           <h3 id="my-name">Anton Kulyk</h3>
         </Link>
+        <button onClick={toggle}>{isLight ? 'Dark' : 'Light'}</button>
       </nav>
       <style jsx global>{`
         #nav {
           display: flex;
           height: 60px;
+          justify-content: space-between;
           align-items: center;
         }
         #home-link {
@@ -26,7 +30,6 @@ function NavBar(): React.ReactElement {
           border-radius: 1.5rem;
         }
         #my-name {
-          color: black;
           margin-left: 12px;
         }
       `}</style>
