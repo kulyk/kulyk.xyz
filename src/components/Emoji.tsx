@@ -1,12 +1,13 @@
 type Props = {
+  id?: string;
   name: string;
   children: string;
 };
 
 function Emoji(props: Props): React.ReactElement {
-  const {name, children} = props;
+  const {id, name, children} = props;
   return (
-    <span role="img" aria-label={`${name} emoji`}>
+    <span id={id} role="img" aria-label={`${name} emoji`}>
       {children}
     </span>
   );

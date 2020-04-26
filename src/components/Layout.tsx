@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import {useTheme} from '../theming';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 interface LayoutProps {
   title?: string;
@@ -29,6 +30,7 @@ function Layout(props: LayoutProps): React.ReactElement {
       <div id="layout">
         <NavBar />
         <main id="content-root">{children}</main>
+        <Footer />
       </div>
       <style jsx global>{`
         html,
@@ -74,7 +76,7 @@ function Layout(props: LayoutProps): React.ReactElement {
         #layout {
           max-width: 800px;
           margin: auto;
-          padding: 0 1.5rem 50px 1.5rem;
+          padding: 0 1.5rem 20px 1.5rem;
         }
         #content-root {
           display: 'flex';
