@@ -13,10 +13,10 @@ const defaultProps = {
 };
 
 function Layout(props: LayoutProps): React.ReactElement {
-  const {children, hasNavBar, hasFooter} = props;
+  const {children, hasNavBar, hasFooter, ...pageProps} = props;
   return (
     <>
-      <Page>
+      <Page {...pageProps}>
         <div id="layout">
           {hasNavBar && <NavBar />}
           <main id="content-root">{children}</main>
