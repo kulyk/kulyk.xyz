@@ -13,7 +13,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const publishedAt = formatPubDate(props.post.publishedAt);
   return (
     <>
-      <Layout>
+      <Layout title={title} description={description}>
         <h1>{title}</h1>
         <div className="about-article">
           <h3 className="secondary">{description}</h3>
