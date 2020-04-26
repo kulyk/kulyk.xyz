@@ -35,7 +35,14 @@ function Intro(): React.ReactElement {
       <p className="intro">
         If you want to get in touch,{' '}
         <a href="mailto:kuliks.anton@gmail.com">send me an email</a> or ping me
-        on <a href="https://twitter.com/kkkulyk">Twitter</a>.
+        on{' '}
+        <a
+          href="https://twitter.com/kkkulyk"
+          target="_blank"
+          rel="noopener noreferrer">
+          Twitter
+        </a>
+        .
       </p>
       <style jsx>{`
         .intro {
