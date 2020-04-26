@@ -1,6 +1,7 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
 import {Post as PostType} from '../../types';
 import {Layout} from '../../components';
+import {formatPubDate} from '../../utils';
 import POSTS, {findBySlug} from '../../fakePosts';
 
 type PostPageProps = {
@@ -8,11 +9,27 @@ type PostPageProps = {
 };
 
 const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
-  const {title} = props.post;
+  const {title, description} = props.post;
+  const publishedAt = formatPubDate(props.post.publishedAt);
   return (
-    <Layout>
-      <h1>{title}</h1>
-    </Layout>
+    <>
+      <Layout>
+        <h1>{title}</h1>
+        <div className="about-article">
+          <h3 className="secondary">{description}</h3>
+          <p className="secondary">{publishedAt}</p>
+        </div>
+      </Layout>
+      <style jsx>{`
+        .about-article {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 16px;
+        }
+      `}</style>
+    </>
   );
 };
 
