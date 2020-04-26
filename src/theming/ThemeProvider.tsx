@@ -1,4 +1,10 @@
-import {createContext, useCallback, useContext, useState} from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 import {Theme} from './types';
 import {DarkTheme, LightTheme} from './themes';
 
@@ -30,13 +36,19 @@ function ThemeProvider(props: Props): React.ReactElement {
 
   const toggle = useCallback(() => {
     const nextTheme = isLight ? DarkTheme : LightTheme;
-    console.log({
-      current: isLight ? 'light' : 'dark',
-      next: isLight ? 'dark' : 'light',
-    });
     setTheme(nextTheme);
     setIsLight(!isLight);
+    localStorage.setItem('theme', isLight ? 'dark' : 'light');
   }, [isLight]);
+
+  useEffect(() => {
+    const prevTheme = localStorage.getItem('theme');
+    if (prevTheme === 'dark') {
+      setTheme(DarkTheme);
+      setIsLight(!isLight);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <ThemeContext.Provider value={{theme, isLight, toggle}}>
