@@ -67,14 +67,6 @@ const POSTS: Post[] = [
 
   {
     id: '8',
-    title: 'How to Automate Frontend Development',
-    emoji: '👨‍🚀',
-    description: '100 Reasons I Love Netlify',
-    publishedAt: '2020-02-18T23:18:17.522Z',
-  },
-
-  {
-    id: '9',
     title: 'You Must Give GitHub Actions a Try',
     emoji: '🍻',
     description: 'Automating Common Workflows',
