@@ -1,7 +1,7 @@
 import {NextPage, GetStaticProps} from 'next';
-import {format, parseISO} from 'date-fns';
 import {Post} from '../types';
 import {Emoji, Layout, Link} from '../components';
+import {formatPubDate} from '../utils';
 import FAKE_POSTS from '../fakePosts';
 
 function Intro(): React.ReactElement {
@@ -51,15 +51,14 @@ type ArticlePreviewProps = {
 };
 
 function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
-  const {title, description, slug} = props.post;
-  const publishedDate = parseISO(props.post.publishedAt);
-  const publishedAt = format(publishedDate, 'dd MMMM');
+  const {title, description, emoji, slug} = props.post;
+  const publishedAt = formatPubDate(props.post.publishedAt);
   return (
     <>
       <Link href={`/post/${slug}`}>
         <div className="article-preview">
           <div>
-            <h2 className="title">{title}</h2>
+            <h2 className="title">{`${emoji} ${title}`}</h2>
             <p className="secondary description">{description}</p>
           </div>
           <p className="secondary">{publishedAt}</p>
@@ -81,9 +80,6 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
           font-weight: 500;
           font-size: 1.2rem;
           color: black;
-        }
-        .secondary {
-          color: rgba(0, 0, 0, 0.6);
         }
         .description {
           margin-top: 3px;

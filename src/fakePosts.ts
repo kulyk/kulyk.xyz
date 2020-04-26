@@ -1,9 +1,8 @@
 import {Post} from './types';
 
 function addSlug(post: Omit<Post, 'slug'>): Post {
-  const withoutEmoji = post.title.split(' ').slice(1);
-  const lowercase = withoutEmoji.map(word => word.toLowerCase());
-  const slug = lowercase.join('-');
+  const words = post.title.split(' ').map(word => word.toLowerCase());
+  const slug = words.join('-');
   return {
     ...post,
     slug,
@@ -13,7 +12,8 @@ function addSlug(post: Omit<Post, 'slug'>): Post {
 const POSTS: Post[] = [
   {
     id: '1',
-    title: '👨‍💻 My Work Setup',
+    title: 'My Work Setup',
+    emoji: '👨‍💻',
     description: [
       'How I optimize my tools and',
       'workflows for software development',
@@ -22,13 +22,15 @@ const POSTS: Post[] = [
   },
   {
     id: '2',
-    title: '🔨 Code Quality from the Day One',
+    title: 'Code Quality from the Day One',
+    emoji: '🔨',
     description: 'Tools and Workflows to Keep Your Tech Dept Low',
     publishedAt: '2020-04-24T23:18:17.522Z',
   },
   {
     id: '3',
-    title: '✨ Less Code is More',
+    title: 'Less Code is More',
+    emoji: '✨',
     description: [
       'Why Good Software Engineers',
       'delete code, rather than write',
@@ -37,7 +39,8 @@ const POSTS: Post[] = [
   },
   {
     id: '4',
-    title: '👽 Writing Decoupled React Apps',
+    title: 'Writing Decoupled React Apps',
+    emoji: '👽',
     description: [
       'Best Practices and Design Patterns',
       'We Forgot for Some Reason',
@@ -46,7 +49,8 @@ const POSTS: Post[] = [
   },
   {
     id: '6',
-    title: '🐞 Values and References in JavaScript',
+    title: 'Values and References in JavaScript',
+    emoji: '🐞',
     description: [
       'A tale of the most tricky bugs',
       'for beginner developers',
@@ -55,21 +59,24 @@ const POSTS: Post[] = [
   },
   {
     id: '7',
-    title: '📈 Optimizing React Native Apps',
+    title: 'Optimizing React Native Apps',
+    emoji: '📈',
     description: 'Measuring, Improving and Measuring',
     publishedAt: '2020-03-14T23:18:17.522Z',
   },
 
   {
     id: '8',
-    title: '👨‍🚀 How to Automate Frontend Development',
+    title: 'How to Automate Frontend Development',
+    emoji: '👨‍🚀',
     description: '100 Reasons I Love Netlify',
     publishedAt: '2020-02-18T23:18:17.522Z',
   },
 
   {
     id: '9',
-    title: '🍻 You Must Give GitHub Actions a Try',
+    title: 'You Must Give GitHub Actions a Try',
+    emoji: '🍻',
     description: 'Automating Common Workflows',
     publishedAt: '2020-01-29T23:18:17.522Z',
   },

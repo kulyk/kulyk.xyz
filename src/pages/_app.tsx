@@ -40,6 +40,10 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
         a:hover {
           color: #4ca1fe;
         }
+
+        .secondary {
+          color: rgba(0, 0, 0, 0.6);
+        }
       `}</style>
     </>
   );
