@@ -1,7 +1,7 @@
-import {NextPage} from 'next';
+import {NextPage, GetStaticProps} from 'next';
 import {format, parseISO} from 'date-fns';
 import {Post} from '../types';
-import {Emoji, Layout} from '../components';
+import {Emoji, Layout, Link} from '../components';
 import FAKE_POSTS from '../fakePosts';
 
 function Intro(): React.ReactElement {
@@ -51,18 +51,20 @@ type ArticlePreviewProps = {
 };
 
 function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
-  const {title, description} = props.post;
+  const {title, description, slug} = props.post;
   const publishedDate = parseISO(props.post.publishedAt);
   const publishedAt = format(publishedDate, 'dd MMMM');
   return (
     <>
-      <div className="article-preview">
-        <div>
-          <h2 className="title">{title}</h2>
-          <p className="secondary description">{description}</p>
+      <Link href={`/post/${slug}`}>
+        <div className="article-preview">
+          <div>
+            <h2 className="title">{title}</h2>
+            <p className="secondary description">{description}</p>
+          </div>
+          <p className="secondary">{publishedAt}</p>
         </div>
-        <p className="secondary">{publishedAt}</p>
-      </div>
+      </Link>
       <style jsx>{`
         .article-preview {
           display: flex;
@@ -78,6 +80,7 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
         .title {
           font-weight: 500;
           font-size: 1.2rem;
+          color: black;
         }
         .secondary {
           color: rgba(0, 0, 0, 0.6);
@@ -128,12 +131,12 @@ const Home: NextPage<HomePageProps> = (props: HomePageProps) => (
   </Layout>
 );
 
-export function getStaticProps(): {props: HomePageProps} {
+export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
   return {
     props: {
       posts: FAKE_POSTS,
     },
   };
-}
+};
 
 export default Home;
