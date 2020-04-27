@@ -1,5 +1,5 @@
 import Emoji from './Emoji';
-import {getRandomInt} from '../utils';
+import {getRandomListItem} from '../utils';
 
 type FooterEmoji = {
   name: string;
@@ -23,14 +23,9 @@ const EMOJI_LIST: FooterEmoji[] = [
   {name: 'unicorn', emoji: '🦄'},
 ];
 
-function getRandomEmoji(): FooterEmoji {
-  const index = getRandomInt(0, EMOJI_LIST.length - 1);
-  return EMOJI_LIST[index];
-}
-
 function Footer(): React.ReactElement {
   const year = new Date().getFullYear();
-  const {name, emoji} = getRandomEmoji();
+  const {name, emoji} = getRandomListItem<FooterEmoji>(EMOJI_LIST);
   return (
     <>
       <footer id="footer">

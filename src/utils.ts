@@ -10,3 +10,8 @@ export function getRandomInt(min: number, max: number): number {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+export function getRandomListItem<T>(list: T[]): T {
+  const index = getRandomInt(0, list.length - 1);
+  return list[index];
+}
