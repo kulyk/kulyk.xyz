@@ -1,7 +1,7 @@
 ---
 title: Values and References in JavaScript
 emoji: 🐞
-slug: my-work-setup
+slug: values-and-references-in-javascript
 description: Optimizing React Native Apps
 publishedAt: '2020-03-27T23:18:17.522Z'
 ---

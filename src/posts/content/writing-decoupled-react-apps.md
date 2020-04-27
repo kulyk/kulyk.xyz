@@ -1,7 +1,7 @@
 ---
 title: Writing Decoupled React Apps
 emoji: 👽
-slug: my-work-setup
+slug: writing-decoupled-react-apps
 description: Best Practices and Design Patterns  We Forgot for Some Reason
 publishedAt: '2020-04-05T23:18:17.522Z'
 ---
