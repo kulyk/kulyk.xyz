@@ -1,9 +1,44 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 
+import {useCallback} from 'react';
+import {GetStaticProps} from 'next';
 import Terminal from 'react-console-emulator';
-import {Emoji, Layout} from '../components';
+import {Post, getAllPosts} from '../posts';
+import {Emoji, Layout, Link} from '../components';
 
-function PageNotFound(): React.ReactElement {
+type PostPart = Pick<Post, 'title' | 'slug'>;
+
+type NotFoundPageProps = {
+  posts: PostPart[];
+};
+
+function PageNotFound(props: NotFoundPageProps): React.ReactElement {
+  const {posts} = props;
+
+  const renderPostLink = useCallback(
+    (post: PostPart, i: number) => (
+      <>
+        <Link key={post.slug} href={`/post/${post.slug}`}>
+          <p className="link">{`${i + 1}. ${post.title}`}</p>
+        </Link>
+        <style jsx>{`
+          .link {
+            text-decoration: underline;
+          }
+        `}</style>
+      </>
+    ),
+    [],
+  );
+
+  const commands = {
+    ls: {
+      name: 'ls',
+      description: 'List existing articles',
+      fn: (): React.ReactElement[] => posts.map(renderPostLink),
+    },
+  };
+
   return (
     <>
       <Layout title="Page Not Found">
@@ -20,7 +55,9 @@ function PageNotFound(): React.ReactElement {
           </p>
           <Terminal
             autoFocus
+            noAutoScroll
             promptLabel={'$ '}
+            commands={commands}
             style={{marginTop: 20, minWidth: 450}}
           />
         </div>
@@ -56,5 +93,12 @@ function PageNotFound(): React.ReactElement {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps<NotFoundPageProps> = async () => {
+  const posts = await getAllPosts();
+  return {
+    props: {posts},
+  };
+};
 
 export default PageNotFound;
