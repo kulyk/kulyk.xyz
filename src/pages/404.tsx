@@ -12,6 +12,13 @@ type NotFoundPageProps = {
   posts: PostPart[];
 };
 
+function sendMeEmail(): void {
+  const mail = document.createElement<'a'>('a');
+  mail.setAttribute('href', 'mailto:kuliks.anton@gmail.com');
+  mail.click();
+  mail.remove();
+}
+
 function PageNotFound(props: NotFoundPageProps): React.ReactElement {
   const {posts} = props;
 
@@ -36,6 +43,11 @@ function PageNotFound(props: NotFoundPageProps): React.ReactElement {
       name: 'ls',
       description: 'List existing articles',
       fn: (): React.ReactElement[] => posts.map(renderPostLink),
+    },
+    email: {
+      name: 'email',
+      description: 'Send me an email',
+      fn: sendMeEmail,
     },
   };
 
