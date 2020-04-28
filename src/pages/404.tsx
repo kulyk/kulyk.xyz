@@ -32,7 +32,7 @@ const FUN_FACTS = [
   "🧳 I've been in 10 countries: 🇺🇦🇵🇱🇫🇮🇸🇪🇪🇪🇩🇪🇫🇷🇪🇸🇮🇹🇬🇪",
   "☢ I've been in Chernobyl and Pripyat",
   "🤦‍♂️ Once I installed TikTok, I've spent 1.5 hours there",
-  "👾 My favorite game is Dragon Age: Origins. Also, I've spent a lot of time playing World of Warcraft as I was a kid (undead warlock!)",
+  "👾 My favorite game is Dragon Age: Origins. Also, I've spent a lot of time playing World of Warcraft when I was a kid (undead warlock!)",
   '🎲 My favorite board game is Mansions of Madness',
 ];
 
