@@ -16,4 +16,8 @@ export type Theme = {
     default: string;
     hover: string;
   };
+  code: {
+    background: string;
+    text: string;
+  };
 };

@@ -18,6 +18,10 @@ export const LightTheme: Theme = {
     default: '#007aff',
     hover: '#4ca1fe',
   },
+  code: {
+    background: 'hsla(0,0%,58.8%,.3)',
+    text: '#000',
+  },
 };
 
 export const DarkTheme: Theme = {
@@ -37,5 +41,9 @@ export const DarkTheme: Theme = {
   link: {
     default: '#0A84FF',
     hover: '#4ca1fe',
+  },
+  code: {
+    background: 'hsla(0, 0%, 58.8%, 0.3)',
+    text: '#fff',
   },
 };
