@@ -8,6 +8,15 @@ export interface PageProps {
   children?: React.ReactNode;
 }
 
+const defaultProps = {
+  description: [
+    'Anton Kulyk is a full-stack software',
+    'engineer from Kyiv, Ukraine.',
+    'Writing about better ways to build software.',
+    'TypeScript, JavaScript, React, React Native, Node.js',
+  ].join(' '),
+};
+
 function getPageTitle(title?: string): string {
   const base = 'Anton Kulyk';
   if (!title) {
@@ -92,5 +101,7 @@ function Page(props: PageProps): React.ReactElement {
     </>
   );
 }
+
+Page.defaultProps = defaultProps;
 
 export default Page;
