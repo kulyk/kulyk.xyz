@@ -12,6 +12,7 @@
     "dev": "next",
     "build": "next build",
     "export": "yarn build && next export",
+    "analyze-bundle": "ANALYZE=true yarn build",
     "validate-project": "npm-run-all check-types check-format lint"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
     "next": "^9.3.6",
+    "next-compose-plugins": "^2.2.0",
     "prismjs": "^1.20.0",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
@@ -32,6 +34,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
+    "@next/bundle-analyzer": "^9.3.6",
     "@types/classnames": "^2.2.10",
     "@types/glob": "^7.1.1",
     "@types/node": "^13.13.4",
