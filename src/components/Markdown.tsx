@@ -32,7 +32,23 @@ function HeadingRenderer(props: {
       <Heading className="heading">{children}</Heading>
       <style jsx>{`
         .heading {
-          padding: 1rem 0;
+          margin: 36px 0 10px 0;
+        }
+      `}</style>
+    </>
+  );
+}
+
+function ParagraphRenderer(props: {
+  children: React.ReactNode;
+}): React.ReactElement {
+  return (
+    <>
+      <p className="paragraph">{props.children}</p>
+      <style jsx>{`
+        .paragraph {
+          line-height: 24px;
+          margin: 0px 0 24px 0;
         }
       `}</style>
     </>
@@ -79,6 +95,7 @@ function ListItemRenderer(props: {
 
 const styledMarkdown = {
   heading: HeadingRenderer,
+  paragraph: ParagraphRenderer,
   code: CodeRenderer,
   inlineCode: InlineCode,
   image: ImageRenderer,
