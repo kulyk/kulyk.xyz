@@ -5,7 +5,7 @@ const DEST = path.join(__dirname, '../out');
 
 sitemap({
   baseUrl: 'https://kulyk.xyz',
-  ignoredExtensions: ['png', 'jpg'],
+  ignoredExtensions: ['png', 'jpg', 'txt'],
   ignoredPaths: ['404'],
   pagesDirectory: DEST,
   targetDirectory: DEST,
