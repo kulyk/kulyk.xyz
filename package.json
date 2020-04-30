@@ -10,8 +10,9 @@
     "lint": "eslint --ignore-path .gitignore --ext .ts,.tsx .",
     "check-types": "tsc",
     "dev": "next",
+    "generate-sitemap": "node ./src/sitemap.js",
     "build": "next build",
-    "export": "yarn build && next export",
+    "export": "yarn build && next export && yarn generate-sitemap",
     "analyze-bundle": "ANALYZE=true yarn build",
     "validate-project": "npm-run-all check-types check-format lint"
   },
@@ -25,6 +26,7 @@
     "gray-matter": "^4.0.2",
     "next": "^9.3.6",
     "next-compose-plugins": "^2.2.0",
+    "nextjs-sitemap-generator": "^0.5.2",
     "prismjs": "^1.20.0",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
