@@ -1,5 +1,5 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
-import {Post as PostType, getAllPostSlugs, findBySlug} from '../../posts';
+import {PostCollection, Post as PostType} from '../../posts';
 import {Layout, Markdown} from '../../components';
 import {formatPubDate} from '../../utils';
 
@@ -50,7 +50,8 @@ type UrlQuery = {
 };
 
 export const getStaticPaths: GetStaticPaths<UrlQuery> = async () => {
-  const slugs = getAllPostSlugs();
+  const collection = new PostCollection();
+  const slugs = collection.getAllPostSlugs();
   const paths = slugs.map(slug => ({
     params: {slug},
   }));
@@ -68,7 +69,8 @@ export const getStaticProps: GetStaticProps<
   if (!slug) {
     throw new Error('Post not found');
   }
-  const {post, content} = await findBySlug(slug);
+  const collection = new PostCollection();
+  const {post, content} = await collection.findBySlug(slug);
   return {props: {post, content}};
 };
 
