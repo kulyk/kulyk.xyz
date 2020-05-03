@@ -4958,10 +4958,10 @@ next@^9.3.6:
     webpack "4.43.0"
     webpack-sources "1.4.3"
 
-nextjs-sitemap-generator@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/nextjs-sitemap-generator/-/nextjs-sitemap-generator-0.5.2.tgz#524859b33f5868f072ec69ada8ff8776f7b95034"
-  integrity sha512-j1hZRnitup673sZ1zaB/VOYpC0doj4394upho0FH9jRxt9n0MpB39v5f0ZUNzMz0ajFJHOHnAXDUinxWH4+htQ==
+nextjs-sitemap-generator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nextjs-sitemap-generator/-/nextjs-sitemap-generator-1.0.0.tgz#88227fea24a055f0d9031bfe4ce303bf537b24b1"
+  integrity sha512-4M5nC2FA1Mf1sDDPQ+a1OJB5iFXjRUuhfQ+V9wVEl8ydzV2jQU6j0lABy+4cHm6KPmQr7ikq3JwOxusbB9nK1w==
   dependencies:
     date-fns "^2.9.0"
 
@@ -7311,6 +7311,17 @@ tryer@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
+
+ts-node@^8.10.1:
+  version "8.10.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.10.1.tgz#77da0366ff8afbe733596361d2df9a60fc9c9bd3"
+  integrity sha512-bdNz1L4ekHiJul6SHtZWs1ujEKERJnHs4HxN7rjTyyVOFf3HaJ6sLqe6aPG62XTzAB/63pKRh5jTSWL0D7bsvw==
+  dependencies:
+    arg "^4.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    source-map-support "^0.5.17"
+    yn "3.1.1"
 
 ts-pnp@^1.1.2:
   version "1.2.0"
