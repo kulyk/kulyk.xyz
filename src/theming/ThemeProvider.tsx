@@ -32,6 +32,7 @@ type Props = {
 function ThemeProvider(props: Props): React.ReactElement {
   const {children} = props;
   const [theme, setTheme] = useState<Theme>(LightTheme);
+  const [initialized, setInitialized] = useState<boolean>(false);
   const [isLight, setIsLight] = useState<boolean>(true);
 
   const toggle = useCallback(() => {
@@ -42,17 +43,20 @@ function ThemeProvider(props: Props): React.ReactElement {
   }, [isLight]);
 
   useEffect(() => {
+    if (initialized) {
+      return;
+    }
     const prevTheme = localStorage.getItem('theme');
     if (prevTheme === 'dark') {
       setTheme(DarkTheme);
       setIsLight(!isLight);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    setInitialized(true);
+  }, [initialized, isLight]);
 
   return (
     <ThemeContext.Provider value={{theme, isLight, toggle}}>
-      {children}
+      {initialized ? children : <div />}
     </ThemeContext.Provider>
   );
 }
