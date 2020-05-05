@@ -3,7 +3,7 @@
 import {useCallback} from 'react';
 import {GetStaticProps} from 'next';
 import Terminal from 'react-console-emulator';
-import {Post, getAllPosts} from '../posts';
+import {PostCollection, Post} from '../posts';
 import {Emoji, Layout, Link} from '../components';
 import {getRandomListItem} from '../utils';
 
@@ -139,7 +139,8 @@ function PageNotFound(props: NotFoundPageProps): React.ReactElement {
 }
 
 export const getStaticProps: GetStaticProps<NotFoundPageProps> = async () => {
-  const posts = await getAllPosts();
+  const collection = new PostCollection();
+  const posts = await collection.getAllPosts();
   return {
     props: {posts},
   };

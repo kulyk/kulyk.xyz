@@ -1,5 +1,5 @@
 import {NextPage, GetStaticProps} from 'next';
-import {Post, getAllPosts} from '../posts';
+import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
 import {Emoji, Layout, Link} from '../components';
 import {formatPubDate} from '../utils';
@@ -143,7 +143,8 @@ const Home: NextPage<HomePageProps> = (props: HomePageProps) => (
 );
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  const posts = await getAllPosts();
+  const collection = new PostCollection();
+  const posts = await collection.getAllPosts();
   return {
     props: {posts},
   };
