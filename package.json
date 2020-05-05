@@ -15,7 +15,7 @@
     "build": "next build",
     "export": "yarn build && next export && yarn generate-sitemap",
     "analyze-bundle": "ANALYZE=true yarn build",
-    "validate-project": "npm-run-all check-types check-format lint"
+    "validate-project": "npm-run-all check-types check-format lint export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
