@@ -27,6 +27,7 @@
     "gray-matter": "^4.0.2",
     "next": "^9.4.4",
     "next-compose-plugins": "^2.2.0",
+    "next-seo": "^4.5.0",
     "nextjs-sitemap-generator": "^1.0.0",
     "prismjs": "^1.20.0",
     "raw-loader": "^4.0.1",

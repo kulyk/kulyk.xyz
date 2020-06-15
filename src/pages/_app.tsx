@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/camelcase */
+
 import {AppProps} from 'next/app';
+import {DefaultSeo} from 'next-seo';
 import {ThemeProvider} from '../theming';
 
 const fonts = [
@@ -13,6 +16,20 @@ const fonts = [
 function App({Component, pageProps}: AppProps): React.ReactElement {
   return (
     <>
+      <DefaultSeo
+        canonical="https://kulyk.xyz/"
+        openGraph={{
+          type: 'website',
+          locale: 'en_US',
+          url: 'https://kulyk.xyz/',
+          site_name: 'Anton Kulyk',
+        }}
+        twitter={{
+          handle: '@anton_kulyk',
+          site: '@anton_kulyk',
+          cardType: 'summary_large_image',
+        }}
+      />
       <ThemeProvider>
         <Component {...pageProps} />
       </ThemeProvider>

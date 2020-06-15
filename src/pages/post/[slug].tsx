@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/camelcase */
+
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
+import {NextSeo} from 'next-seo';
 import {
   FacebookIcon,
   FacebookShareButton,
@@ -66,6 +69,22 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const publishedAt = formatPubDate(post.publishedAt);
   return (
     <>
+      <NextSeo
+        canonical="https://kulyk.xyz/"
+        openGraph={{
+          title,
+          description,
+          type: 'website',
+          locale: 'en_US',
+          url: `https://kulyk.xyz/${post.slug}`,
+          site_name: 'Anton Kulyk',
+        }}
+        twitter={{
+          handle: '@anton_kulyk',
+          site: '@anton_kulyk',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Layout title={title} description={description}>
         <h1>{title}</h1>
         <div className="about-article">
