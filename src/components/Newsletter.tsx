@@ -37,6 +37,31 @@ function Newsletter(): React.ReactElement {
         #newsletter-form input:nth-child(2) {
           margin-left: 10px;
         }
+
+        @media only screen and (max-width: 600px) {
+          #newsletter-form {
+            flex-direction: column;
+          }
+
+          #newsletter-form > div {
+            display: flex;
+            flex-direction: column;
+          }
+
+          #newsletter-form input {
+            margin-top: 10px;
+            height: 1.5em;
+          }
+
+          #newsletter-form input:nth-child(2) {
+            margin-left: 0;
+          }
+
+          #newsletter-form button {
+            margin-top: 10px;
+            height: 2em;
+          }
+        }
       `}</style>
     </>
   );
