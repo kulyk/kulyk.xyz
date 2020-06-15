@@ -34,6 +34,12 @@ function Footer(): React.ReactElement {
       <footer id="footer">
         <p>{`Anton Kulyk © ${year}`}</p>
         <div>
+          <a
+            href="https://github.com/kulyk/kulyk.xyz"
+            rel="noreferrer"
+            target="_blank">
+            GitHub
+          </a>
           <a href="/feed.xml">RSS</a>
           <Emoji name={name}>{emoji}</Emoji>
         </div>
@@ -53,8 +59,7 @@ function Footer(): React.ReactElement {
           color: ${theme.text.secondary};
         }
         #footer a:hover {
-          margin-right: 16px;
-          color: ${theme.text.secondary};
+          text-decoration: underline;
         }
       `}</style>
     </>
