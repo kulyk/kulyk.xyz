@@ -20,7 +20,13 @@ const NAV_BAR_HEIGHT = 60;
 const WIDTH = '800px';
 
 function Layout(props: LayoutProps): React.ReactElement {
-  const {children, hasNavBar, hasFooter, ...pageProps} = props;
+  const {
+    children,
+    hasNavBar,
+    hasNewsletterSection,
+    hasFooter,
+    ...pageProps
+  } = props;
   const {theme} = useTheme();
   return (
     <>
@@ -34,7 +40,7 @@ function Layout(props: LayoutProps): React.ReactElement {
             />
           )}
           <main id="content-root">{children}</main>
-          <Newsletter />
+          {hasNewsletterSection && <Newsletter />}
           {hasFooter && <Footer />}
         </div>
       </Page>
