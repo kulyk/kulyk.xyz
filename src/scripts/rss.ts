@@ -19,7 +19,7 @@ const feed = new Feed({
   link: Config.SITE_URL,
   language: 'en',
   image: Config.getUrl('me-min.jpg'),
-  favicon: Config.getUrl('favicon.ico'),
+  favicon: Config.getUrl('me-min.jpg'),
   copyright: `All rights reserved ${year}, Anton Kulyk`,
   author,
 });
