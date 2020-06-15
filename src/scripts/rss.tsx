@@ -1,8 +1,11 @@
 import fs from 'fs';
 import path from 'path';
+import * as React from 'react';
+import ReactDOM from 'react-dom/server';
 import {Feed} from 'feed';
 import Config from '../config';
 import {PostCollectionScripted} from '../posts';
+import {Markdown} from '../components';
 import {DEST} from './common';
 
 const year = new Date().getFullYear();
@@ -39,7 +42,7 @@ async function generate(): Promise<void> {
       id: post.slug,
       link: Config.getUrl(post.slug),
       description: post.description,
-      content,
+      content: ReactDOM.renderToStaticMarkup(<Markdown content={content} />),
       author: [author],
       date: new Date(post.publishedAt),
     });

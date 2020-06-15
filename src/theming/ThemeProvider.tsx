@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {
   createContext,
   useCallback,
@@ -31,7 +32,7 @@ type Props = {
 
 function ThemeProvider(props: Props): React.ReactElement {
   const {children} = props;
-  const [theme, setTheme] = useState<Theme>(LightTheme);
+  const [theme, setTheme] = useState<Theme>(DarkTheme);
   const [initialized, setInitialized] = useState<boolean>(false);
   const [isLight, setIsLight] = useState<boolean>(true);
 

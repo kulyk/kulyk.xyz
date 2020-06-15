@@ -1,4 +1,6 @@
+import * as React from 'react';
 import Emoji from './Emoji';
+import {useTheme} from '../theming';
 import {getRandomListItem} from '../utils';
 
 type FooterEmoji = {
@@ -24,13 +26,17 @@ const EMOJI_LIST: FooterEmoji[] = [
 ];
 
 function Footer(): React.ReactElement {
+  const {theme} = useTheme();
   const year = new Date().getFullYear();
   const {name, emoji} = getRandomListItem<FooterEmoji>(EMOJI_LIST);
   return (
     <>
       <footer id="footer">
         <p>{`Anton Kulyk © ${year}`}</p>
-        <Emoji name={name}>{emoji}</Emoji>
+        <div>
+          <a href="/feed.xml">RSS</a>
+          <Emoji name={name}>{emoji}</Emoji>
+        </div>
       </footer>
       <style jsx>{`
         #footer {
@@ -40,6 +46,15 @@ function Footer(): React.ReactElement {
           justify-content: space-between;
           margin-top: 20px;
           height: 40px;
+        }
+
+        #footer a {
+          margin-right: 22px;
+          color: ${theme.text.secondary};
+        }
+        #footer a:hover {
+          margin-right: 16px;
+          color: ${theme.text.secondary};
         }
       `}</style>
     </>

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
+import * as React from 'react';
 import NextLink, {LinkProps} from 'next/link';
 import classNames from 'classnames';
 

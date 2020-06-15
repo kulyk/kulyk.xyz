@@ -2,6 +2,7 @@
 /* eslint-disable react/display-name */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
 import InlineCode from './InlineCode';
 import Code from './Code';

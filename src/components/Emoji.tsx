@@ -1,3 +1,4 @@
+import * as React from 'react';
 import EmojiRender, {Emojione} from 'react-emoji-render';
 
 type Props = {

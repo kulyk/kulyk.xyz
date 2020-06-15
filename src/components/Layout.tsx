@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {useTheme} from '../theming';
 import Page, {PageProps} from './Page';
 import NavBar from './NavBar';
