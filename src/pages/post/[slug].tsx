@@ -1,7 +1,54 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+} from 'react-share';
 import {PostCollection, Post as PostType} from '../../posts';
-import {Layout, Markdown} from '../../components';
+import {Emoji, Layout, Markdown} from '../../components';
 import {formatPubDate} from '../../utils';
+
+function ShareSection(): React.ReactElement {
+  return (
+    <>
+      <h2 id="hey">Do you have a moment?</h2>
+      <section id="share-container">
+        <p id="share-title">
+          Hi, I&apos;m new to blogging. If you liked the article, please share
+          it on Facebook or Twitter, it will help me a lot{' '}
+          <Emoji name="pray">🙏</Emoji>
+        </p>
+        <div>
+          <TwitterShareButton
+            url={window.location.href}
+            style={{marginRight: 16}}>
+            <TwitterIcon size={40} round />
+          </TwitterShareButton>
+          <FacebookShareButton url={window.location.href}>
+            <FacebookIcon size={40} round />
+          </FacebookShareButton>
+        </div>
+      </section>
+      <style jsx>{`
+        #hey {
+          margin-top: 100px;
+          padding-bottom: 16px;
+        }
+
+        #share-container {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        #share-title {
+          flex: 0.8;
+          line-height: 1.5em;
+        }
+      `}</style>
+    </>
+  );
+}
 
 type PostPageProps = {
   post: PostType;
@@ -23,6 +70,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         <article id="post">
           <Markdown content={content} />
         </article>
+        <ShareSection />
       </Layout>
       <style jsx>{`
         .about-article {
