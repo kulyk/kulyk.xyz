@@ -14,6 +14,11 @@ export const LightTheme: Theme = {
     background: '#007aff',
     hover: '#4ca1fe',
   },
+  input: {
+    text: '#000',
+    background: 'transparent',
+    border: 'rgba(0, 0, 0, 0.2)',
+  },
   link: {
     default: '#007aff',
     hover: '#4ca1fe',
@@ -37,6 +42,11 @@ export const DarkTheme: Theme = {
     text: '#fff',
     background: '#0A84FF',
     hover: '#4ca1fe',
+  },
+  input: {
+    text: '#000',
+    background: '#fff',
+    border: '#131415',
   },
   link: {
     default: '#0A84FF',

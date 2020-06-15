@@ -3,7 +3,7 @@ import {Emoji, Layout} from '../components';
 function Error(): React.ReactElement {
   return (
     <>
-      <Layout title="Error">
+      <Layout title="Error" hasNewsletterSection={false}>
         <div id="error-container">
           <p id="emoji">
             <Emoji name="sad">😬</Emoji>

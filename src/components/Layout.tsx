@@ -1,15 +1,18 @@
 import {useTheme} from '../theming';
 import Page, {PageProps} from './Page';
 import NavBar from './NavBar';
+import Newsletter from './Newsletter';
 import Footer from './Footer';
 
 interface LayoutProps extends PageProps {
   hasNavBar?: boolean;
+  hasNewsletterSection?: boolean;
   hasFooter?: boolean;
 }
 
 const defaultProps = {
   hasNavBar: true,
+  hasNewsletterSection: true,
   hasFooter: true,
 };
 
@@ -31,6 +34,7 @@ function Layout(props: LayoutProps): React.ReactElement {
             />
           )}
           <main id="content-root">{children}</main>
+          <Newsletter />
           {hasFooter && <Footer />}
         </div>
       </Page>

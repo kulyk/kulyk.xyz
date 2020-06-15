@@ -80,7 +80,7 @@ function PageNotFound(props: NotFoundPageProps): React.ReactElement {
 
   return (
     <>
-      <Layout title="Page Not Found">
+      <Layout title="Page Not Found" hasNewsletterSection={false}>
         <div id="container-404">
           <p id="emoji-404">
             <Emoji name="sad">😔</Emoji>

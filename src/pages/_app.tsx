@@ -45,6 +45,14 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
           font-size: 1rem;
           border-radius: 5px;
         }
+
+        input {
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 5px;
+          padding: 5px 10px;
+          font-size: 1rem;
+        }
       `}</style>
     </>
   );

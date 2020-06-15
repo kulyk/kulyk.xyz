@@ -73,6 +73,12 @@ function Page(props: PageProps): React.ReactElement {
           background-color: ${theme.button.background};
         }
 
+        input {
+          color: ${theme.input.text};
+          background-color: ${theme.input.background};
+          border-color: ${theme.input.border};
+        }
+
         code {
           font-family: 'Lucida Console', Monaco, monospace;
           font-size: 0.8rem;

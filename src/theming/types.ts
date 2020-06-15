@@ -12,6 +12,11 @@ export type Theme = {
     background: string;
     hover: string;
   };
+  input: {
+    text: string;
+    background: string;
+    border: string;
+  };
   link: {
     default: string;
     hover: string;
