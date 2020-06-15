@@ -1,5 +1,5 @@
 const isDev = process.env.NODE_ENV === 'development';
-const SITE_URL = isDev ? 'http://localhost:3000' : 'https://kulyk.xys';
+const SITE_URL = isDev ? 'http://localhost:3000' : 'https://kulyk.xyz';
 
 export default {
   SITE_URL,
