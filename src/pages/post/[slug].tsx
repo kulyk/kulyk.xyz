@@ -12,33 +12,38 @@ import {formatPubDate} from '../../utils';
 function ShareSection(): React.ReactElement {
   return (
     <>
-      <h2 id="hey">Do you have a moment?</h2>
-      <section id="share-container">
-        <p id="share-title">
-          Hi, I&apos;m new to blogging. If you liked the article, please share
-          it on Facebook or Twitter, it will help me a lot{' '}
-          <Emoji name="pray">🙏</Emoji>
-        </p>
-        <div>
-          <TwitterShareButton
-            url={window.location.href}
-            style={{marginRight: 16}}>
-            <TwitterIcon size={40} round />
-          </TwitterShareButton>
-          <FacebookShareButton url={window.location.href}>
-            <FacebookIcon size={40} round />
-          </FacebookShareButton>
+      <section id="share-root">
+        <h2 id="hey">Do you have a moment?</h2>
+        <div id="share-container">
+          <p id="share-title">
+            Hi, I&apos;m new to blogging. If you liked the article, please share
+            it on Facebook or Twitter, it will help me a lot{' '}
+            <Emoji name="pray">🙏</Emoji>
+          </p>
+          <div>
+            <TwitterShareButton
+              url={window.location.href}
+              style={{marginRight: 16}}>
+              <TwitterIcon size={40} round />
+            </TwitterShareButton>
+            <FacebookShareButton url={window.location.href}>
+              <FacebookIcon size={40} round />
+            </FacebookShareButton>
+          </div>
         </div>
       </section>
       <style jsx>{`
-        #hey {
+        #share-root {
           margin-top: 100px;
-          padding-bottom: 16px;
         }
 
         #share-container {
           display: flex;
           justify-content: space-between;
+        }
+
+        #hey {
+          padding-bottom: 16px;
         }
 
         #share-title {

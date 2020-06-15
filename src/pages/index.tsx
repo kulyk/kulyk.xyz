@@ -84,6 +84,7 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
           justify-content: space-between;
           padding: 10px;
           margin: 8px 0 8px 0;
+          border-radius: 8px;
         }
         .article-preview:hover {
           background-color: ${theme.background.hover};
