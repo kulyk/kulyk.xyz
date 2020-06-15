@@ -2,6 +2,7 @@
 
 import {AppProps} from 'next/app';
 import {DefaultSeo} from 'next-seo';
+import Config from '../config';
 import {ThemeProvider} from '../theming';
 
 const fonts = [
@@ -17,16 +18,16 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
   return (
     <>
       <DefaultSeo
-        canonical="https://kulyk.xyz/"
+        canonical={Config.SITE_URL}
         openGraph={{
           type: 'website',
           locale: 'en_US',
-          url: 'https://kulyk.xyz/',
+          url: Config.SITE_URL,
           site_name: 'Anton Kulyk',
         }}
         twitter={{
-          handle: '@anton_kulyk',
-          site: '@anton_kulyk',
+          handle: Config.TWITTER_USERNAME,
+          site: Config.TWITTER_USERNAME,
           cardType: 'summary_large_image',
         }}
       />

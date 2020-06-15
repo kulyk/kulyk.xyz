@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Anton Kulyk</title>
+        <link>https://kulyk.xyz/</link>
+        <description></description>
+        <lastBuildDate>Mon, 15 Jun 2020 21:56:48 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <image>
+            <title>Anton Kulyk</title>
+            <url>https://kulyk.xyz/me-min.jpg</url>
+            <link>https://kulyk.xyz/</link>
+        </image>
+        <copyright>All rights reserved 2020, Anton Kulyk</copyright>
+        <category>Technology</category>
+        <category>Engineering</category>
+        <category>Software</category>
+        <category>Code</category>
+        <item>
+            <title><![CDATA[My Work Setup]]></title>
+            <link>https://kulyk.xyz/my-work-setup</link>
+            <guid>my-work-setup</guid>
+            <pubDate>Sat, 25 Apr 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[How I optimize my tools and workflows for software development]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+        <item>
+            <title><![CDATA[You Must Give GitHub Actions a Try]]></title>
+            <link>https://kulyk.xyz/you-must-give-github-actions-a-try</link>
+            <guid>you-must-give-github-actions-a-try</guid>
+            <pubDate>Sat, 25 Apr 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[Automating Common Workflows]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+        <item>
+            <title><![CDATA[Code Quality from the Day One]]></title>
+            <link>https://kulyk.xyz/code-quality-from-the-day-one</link>
+            <guid>code-quality-from-the-day-one</guid>
+            <pubDate>Fri, 24 Apr 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[Tools and Workflows to Keep Your Tech Dept Low]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+        <item>
+            <title><![CDATA[Less Code is More]]></title>
+            <link>https://kulyk.xyz/less-code-is-more</link>
+            <guid>less-code-is-more</guid>
+            <pubDate>Thu, 16 Apr 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[Why Good Software Engineers delete code, rather than write]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+        <item>
+            <title><![CDATA[Writing Decoupled React Apps]]></title>
+            <link>https://kulyk.xyz/writing-decoupled-react-apps</link>
+            <guid>writing-decoupled-react-apps</guid>
+            <pubDate>Sun, 05 Apr 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[Best Practices and Design Patterns  We Forgot for Some Reason]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+        <item>
+            <title><![CDATA[Values and References in JavaScript]]></title>
+            <link>https://kulyk.xyz/values-and-references-in-javascript</link>
+            <guid>values-and-references-in-javascript</guid>
+            <pubDate>Fri, 27 Mar 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[Optimizing React Native Apps]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+        <item>
+            <title><![CDATA[Optimizing React Native Apps]]></title>
+            <link>https://kulyk.xyz/optimizing-react-native-apps</link>
+            <guid>optimizing-react-native-apps</guid>
+            <pubDate>Sat, 14 Mar 2020 23:18:17 GMT</pubDate>
+            <description><![CDATA[Measuring, Improving and Measuring]]></description>
+            <content:encoded><![CDATA[
+The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+
+The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+
+## Headline
+
+Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+
+## Example
+
+![demo-image](/demo.jpg)
+
+## Headline 2
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+```bash
+yarn add some-library
+yarn run-some-command
+```
+
+```javascript
+class Animal {
+  sound() {}
+}
+
+class Cat extends Animal {
+  sound() {
+    return 'Meow!';
+  }
+}
+```
+
+## Headline 3
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+- `yarn`
+- `sudo gem install cocoapods`
+- `cd ios && pod install`
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+4. List Item 4
+5. List Item 5
+
+Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+
+## Head 2
+
+### Head 3
+
+#### Head 4
+
+##### Head 5
+
+###### Head 6
+]]></content:encoded>
+            <author>kuliks.anton@gmail.com (Anton Kulyk)</author>
+        </item>
+    </channel>
+</rss>

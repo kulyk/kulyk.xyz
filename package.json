@@ -12,8 +12,9 @@
     "dev": "next",
     "run-script": "ts-node --project ./src/scripts/tsconfig.json",
     "generate-sitemap": "yarn run-script ./src/scripts/sitemap.ts",
+    "generate-feed": "yarn run-script ./src/scripts/rss.ts",
     "build": "next build",
-    "export": "yarn build && next export && yarn generate-sitemap",
+    "export": "yarn build && next export && yarn generate-sitemap && yarn generate-feed",
     "analyze-bundle": "ANALYZE=true yarn build",
     "validate-project": "npm-run-all check-types check-format lint export"
   },
@@ -23,6 +24,7 @@
     "classnames": "^2.2.6",
     "csstype": "^2.6.10",
     "date-fns": "^2.14.0",
+    "feed": "^4.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
     "next": "^9.4.4",

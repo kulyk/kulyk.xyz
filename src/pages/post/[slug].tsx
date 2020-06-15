@@ -8,6 +8,7 @@ import {
   TwitterIcon,
   TwitterShareButton,
 } from 'react-share';
+import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import {Emoji, Layout, Markdown} from '../../components';
 import {formatPubDate} from '../../utils';
@@ -70,13 +71,13 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   return (
     <>
       <NextSeo
-        canonical="https://kulyk.xyz/"
+        canonical={Config.getUrl(post.slug)}
         openGraph={{
           title,
           description,
           type: 'website',
           locale: 'en_US',
-          url: `https://kulyk.xyz/${post.slug}`,
+          url: Config.getUrl(post.slug),
           site_name: 'Anton Kulyk',
         }}
         twitter={{

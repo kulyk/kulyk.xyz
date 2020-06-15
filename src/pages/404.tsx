@@ -3,6 +3,7 @@
 import {useCallback} from 'react';
 import {GetStaticProps} from 'next';
 import Terminal from 'react-console-emulator';
+import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import {Emoji, Layout, Link} from '../components';
 import {getRandomListItem} from '../utils';
@@ -15,7 +16,7 @@ type NotFoundPageProps = {
 
 function sendMeEmail(): void {
   const mail = document.createElement<'a'>('a');
-  mail.setAttribute('href', 'mailto:kuliks.anton@gmail.com');
+  mail.setAttribute('href', `mailto:${Config.EMAIL}`);
   mail.click();
   mail.remove();
 }
