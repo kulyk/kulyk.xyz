@@ -1,4 +1,5 @@
 import {NextPage, GetStaticProps} from 'next';
+import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
 import {Emoji, Layout, Link} from '../components';
@@ -34,8 +35,7 @@ function Intro(): React.ReactElement {
       </p>
       <p className="intro">
         If you want to get in touch,{' '}
-        <a href="mailto:kuliks.anton@gmail.com">send me an email</a> or ping me
-        on{' '}
+        <a href={`mailto:${Config.EMAIL}`}>send me an email</a> or ping me on{' '}
         <a
           href="https://twitter.com/kkkulyk"
           target="_blank"

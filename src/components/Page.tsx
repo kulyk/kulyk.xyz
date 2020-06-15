@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Config from '../config';
 import {useTheme} from '../theming';
 
 export interface PageProps {
@@ -44,6 +45,12 @@ function Page(props: PageProps): React.ReactElement {
         <title>{getPageTitle(title)}</title>
         {description && <meta name="description" content={description} />}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="RSS"
+          href={Config.getUrl('feed.xml')}
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <link
           rel="icon"
