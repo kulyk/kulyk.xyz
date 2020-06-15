@@ -9,3 +9,17 @@
 [[redirects]]
   from = "/rss"
   to = "/feed.xml"
+
+# 💩💩💩
+
+[[redirects]]
+  from = "/admin"
+  to = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+[[redirects]]
+  from = "/wp-admin"
+  to = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+[[redirects]]
+  from = "/wp-admin.php"
+  to = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
