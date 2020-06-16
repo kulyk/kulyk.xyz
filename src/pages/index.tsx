@@ -37,7 +37,7 @@ function Intro(): React.ReactElement {
         If you want to get in touch,{' '}
         <a href={`mailto:${Config.EMAIL}`}>send me an email</a> or ping me on{' '}
         <a
-          href="https://twitter.com/kkkulyk"
+          href={`https://twitter.com/${Config.TWITTER_USERNAME}`}
           target="_blank"
           rel="noopener noreferrer">
           Twitter

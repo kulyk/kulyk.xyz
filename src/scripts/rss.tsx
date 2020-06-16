@@ -6,6 +6,7 @@ import {Feed} from 'feed';
 import Config from '../config';
 import {PostCollectionScripted} from '../posts';
 import {Markdown} from '../components';
+import {getPostFullUrl} from '../utils';
 import {DEST} from './common';
 
 const year = new Date().getFullYear();
@@ -40,7 +41,7 @@ async function generate(): Promise<void> {
     feed.addItem({
       title: post.title,
       id: post.slug,
-      link: Config.getUrl(`post/${post.slug}`),
+      link: getPostFullUrl(post.slug),
       description: post.description,
       content: ReactDOM.renderToStaticMarkup(<Markdown content={content} />),
       author: [author],

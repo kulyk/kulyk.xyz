@@ -11,7 +11,7 @@ import {
 import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import {Emoji, Layout, Markdown} from '../../components';
-import {formatPubDate} from '../../utils';
+import {formatPubDate, getPostFullUrl} from '../../utils';
 
 function ShareSection(): React.ReactElement {
   return (
@@ -71,13 +71,13 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   return (
     <>
       <NextSeo
-        canonical={Config.getUrl(post.slug)}
+        canonical={getPostFullUrl(post.slug)}
         openGraph={{
           title,
           description,
           type: 'website',
           locale: 'en_US',
-          url: Config.getUrl(post.slug),
+          url: getPostFullUrl(post.slug),
           site_name: 'Anton Kulyk',
         }}
         twitter={{

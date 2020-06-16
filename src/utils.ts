@@ -1,4 +1,13 @@
 import {format, parseISO} from 'date-fns';
+import Config from './config';
+
+export function getUrl(path: string): string {
+  return `${Config.SITE_URL}/${path}`;
+}
+
+export function getPostFullUrl(slug: string): string {
+  return getUrl(`post/${slug}`);
+}
 
 export function formatPubDate(dateISO: string): string {
   const publishedDate = parseISO(dateISO);
