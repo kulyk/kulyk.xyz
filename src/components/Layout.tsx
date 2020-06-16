@@ -13,7 +13,7 @@ interface LayoutProps extends PageProps {
 
 const defaultProps = {
   hasNavBar: true,
-  hasNewsletterSection: true,
+  hasNewsletterSection: false,
   hasFooter: true,
 };
 
