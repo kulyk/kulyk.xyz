@@ -40,7 +40,7 @@ async function generate(): Promise<void> {
     feed.addItem({
       title: post.title,
       id: post.slug,
-      link: Config.getUrl(post.slug),
+      link: Config.getUrl(`post/${post.slug}`),
       description: post.description,
       content: ReactDOM.renderToStaticMarkup(<Markdown content={content} />),
       author: [author],
