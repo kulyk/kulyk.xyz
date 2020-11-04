@@ -23,7 +23,7 @@
     "@zeit/next-source-maps": "^0.0.3",
     "classnames": "^2.2.6",
     "csstype": "^3.0.4",
-    "date-fns": "^2.14.0",
+    "date-fns": "^2.16.1",
     "feed": "^4.2.1",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
