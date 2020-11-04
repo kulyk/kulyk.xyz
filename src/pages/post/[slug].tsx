@@ -8,7 +8,6 @@ import {
   TwitterIcon,
   TwitterShareButton,
 } from 'react-share';
-import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import {Emoji, Layout, Markdown} from '../../components';
 import {formatPubDate, getPostFullUrl} from '../../utils';

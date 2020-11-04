@@ -44,6 +44,7 @@ class BasePostCollection {
   async getAllPostsWithContent(): Promise<ParsedPost[]> {
     const slugs = this.getAllPostSlugs();
     const readFiles = slugs.map(slug => this.findBySlug(slug));
+    // eslint-disable-next-line no-undef
     const files = await Promise.all(readFiles);
     files.sort((p1, p2) => {
       const date1 = parseISO(p1.post.publishedAt);

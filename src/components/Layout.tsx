@@ -9,6 +9,11 @@ interface LayoutProps extends PageProps {
   hasNavBar?: boolean;
   hasNewsletterSection?: boolean;
   hasFooter?: boolean;
+
+  // TODO Figure out why Eslint reports
+  // children as a not defined prop
+  // when it's inherited from PageProps
+  children?: React.ReactNode;
 }
 
 const defaultProps = {
