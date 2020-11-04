@@ -4928,12 +4928,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
-lodash@^4.17.19:
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -5390,10 +5385,10 @@ next@^9.4.4:
     webpack "4.43.0"
     webpack-sources "1.4.3"
 
-nextjs-sitemap-generator@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nextjs-sitemap-generator/-/nextjs-sitemap-generator-1.0.0.tgz#88227fea24a055f0d9031bfe4ce303bf537b24b1"
-  integrity sha512-4M5nC2FA1Mf1sDDPQ+a1OJB5iFXjRUuhfQ+V9wVEl8ydzV2jQU6j0lABy+4cHm6KPmQr7ikq3JwOxusbB9nK1w==
+nextjs-sitemap-generator@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/nextjs-sitemap-generator/-/nextjs-sitemap-generator-1.1.0.tgz#838863cd42bdab0ff1f88a1c19e3b44c03d6001e"
+  integrity sha512-l3/MGvgfJIoY+ZEDU3jLRueh0YWIgtH59LDKX4Ky69JjJvlgizA1U2g5HRhnmWan6HFgOIGtsvGTL2rs4fB2IA==
   dependencies:
     date-fns "^2.9.0"
 
