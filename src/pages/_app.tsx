@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/camelcase */
-
 import {AppProps} from 'next/app';
 import {DefaultSeo} from 'next-seo';
 import Config from '../config';

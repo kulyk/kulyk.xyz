@@ -37,13 +37,14 @@ async function generate(): Promise<void> {
   const collection = new PostCollectionScripted();
   const posts = await collection.getAllPostsWithContent();
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   posts.forEach(({post, content}) => {
     feed.addItem({
       title: post.title,
       id: post.slug,
       link: getPostFullUrl(post.slug),
       description: post.description,
-      content: ReactDOM.renderToStaticMarkup(<Markdown content={content} />),
+      // content: ReactDOM.renderToStaticMarkup(<Markdown content={content} />),
       author: [author],
       date: new Date(post.publishedAt),
     });

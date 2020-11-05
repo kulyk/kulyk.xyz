@@ -4,19 +4,19 @@ declare module 'nextjs-sitemap-generator' {
     styleFile: string;
   }
   export interface Config {
-    alternateUrls?: object;
+    alternateUrls?: Record<string, unknown>;
     baseUrl: string;
-    ignoredPaths?: Array<string>;
+    ignoredPaths?: Array<string | RegExp>;
     extraPaths?: Array<string>;
     ignoreIndexFiles?: Array<string> | boolean;
     ignoredExtensions?: Array<string>;
     pagesDirectory: string;
     nextConfigPath?: string;
     targetDirectory: string;
-    pagesConfig?: object;
+    pagesConfig?: Record<string, {priority?: number; changefreq: string}>;
     sitemapStylesheet?: Array<SitemapStyleFile>;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
   export default (config: Config): void => {};
 }

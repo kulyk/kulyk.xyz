@@ -1,6 +1,5 @@
 declare module 'react-console-emulator' {
   import * as React from 'react';
-  import * as CSS from 'csstype';
 
   interface OptionProps {
     autoFocus: boolean;
@@ -24,7 +23,7 @@ declare module 'react-console-emulator' {
       usage?: string;
       fn: () => string;
     };
-    commandCallback?: () => {};
+    commandCallback?: () => void;
   }
 
   export type TerminalProps = CommandProps &
@@ -32,5 +31,8 @@ declare module 'react-console-emulator' {
     OptionProps &
     StyleProps;
 
-  export default class Terminal extends React.Component<TerminalProps, {}> {}
+  export default class Terminal extends React.Component<
+    TerminalProps,
+    unknown
+  > {}
 }

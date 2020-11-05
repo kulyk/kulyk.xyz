@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Image from 'next/image';
 import Link from './Link';
 import {useTheme} from '../theming';
 
@@ -15,7 +16,13 @@ function NavBar(props: Props): React.ReactElement {
     <>
       <nav id="nav">
         <Link id="home-link" href="/">
-          <img id="my-photo" src="/me-min.jpg" alt="Anton" />
+          <Image
+            id="my-photo"
+            height={32}
+            width={32}
+            src="/me-min.jpg"
+            alt="Anton"
+          />
           <h3 id="my-name">Anton Kulyk</h3>
         </Link>
         <button onClick={toggle}>{isLight ? 'Dark' : 'Light'}</button>
@@ -42,9 +49,7 @@ function NavBar(props: Props): React.ReactElement {
           align-items: center;
         }
         #my-photo {
-          width: 2rem;
-          height: 2rem;
-          border-radius: 1.5rem;
+          border-radius: 16px;
         }
         #my-name {
           margin-left: 12px;

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/camelcase */
-
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
 import {NextSeo} from 'next-seo';
 import {
