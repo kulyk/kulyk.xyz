@@ -7,7 +7,9 @@ import {
   TwitterShareButton,
 } from 'react-share';
 import {PostCollection, Post as PostType} from '../../posts';
-import {Emoji, Layout, Markdown} from '../../components';
+import Emoji from '../../components/Emoji';
+import Layout from '../../components/Layout';
+import Markdown from '../../components/Markdown';
 import {formatPubDate, getPostFullUrl} from '../../utils';
 
 function ShareSection(): React.ReactElement {

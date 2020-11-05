@@ -48,10 +48,9 @@ function ThemeProvider(props: Props): React.ReactElement {
       return;
     }
     const prevTheme = localStorage.getItem('theme');
-    if (prevTheme === 'dark') {
-      setTheme(DarkTheme);
-      setIsLight(!isLight);
-    }
+    const isDark = prevTheme === 'dark';
+    setTheme(isDark ? DarkTheme : LightTheme);
+    setIsLight(!isDark);
     setInitialized(true);
   }, [initialized, isLight]);
 

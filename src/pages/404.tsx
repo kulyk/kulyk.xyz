@@ -5,7 +5,9 @@ import {GetStaticProps} from 'next';
 import Terminal from 'react-console-emulator';
 import Config from '../config';
 import {PostCollection, Post} from '../posts';
-import {Emoji, Layout, Link} from '../components';
+import Emoji from '../components/Emoji';
+import Layout from '../components/Layout';
+import Link from '../components/Link';
 import {getRandomListItem} from '../utils';
 
 type PostPart = Pick<Post, 'title' | 'slug'>;

@@ -2,7 +2,9 @@ import {NextPage, GetStaticProps} from 'next';
 import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
-import {Emoji, Layout, Link} from '../components';
+import Emoji from '../components/Emoji';
+import Layout from '../components/Layout';
+import Link from '../components/Link';
 import {formatPubDate} from '../utils';
 
 function Intro(): React.ReactElement {

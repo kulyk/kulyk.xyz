@@ -1,4 +1,5 @@
-import {format, parseISO} from 'date-fns';
+import format from 'date-fns/format';
+import parseISO from 'date-fns/parseISO';
 import Config from './config';
 
 export function getUrl(path: string): string {

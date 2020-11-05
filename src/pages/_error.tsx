@@ -1,4 +1,5 @@
-import {Emoji, Layout} from '../components';
+import Emoji from '../components/Emoji';
+import Layout from '../components/Layout';
 
 function Error(): React.ReactElement {
   return (
