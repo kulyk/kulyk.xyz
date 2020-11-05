@@ -9,22 +9,12 @@ function Intro(): React.ReactElement {
   return (
     <section>
       <p className="intro">
-        Hi, I&apos;m Anton <Emoji name="wave">👋</Emoji> I&apos;m a full-stack
-        software engineer from Kyiv, Ukraine{' '}
-        <Emoji name="Ukraine flag">🇺🇦</Emoji>
-      </p>
-      <p className="intro">
-        Currently leading the software team at{' '}
-        <a href="https://pix.style" target="_blank" rel="noopener noreferrer">
-          Pix
-        </a>
-        . We combine creativity with portability through our backpacks with LED
-        screens you can control with your phone.
+        Hi, I&apos;m Anton <Emoji name="wave">👋</Emoji> I&apos;m a software
+        engineer from Kyiv, Ukraine <Emoji name="Ukraine flag">🇺🇦</Emoji>
       </p>
       <p className="intro">
         Here I write about better ways to build software I find while coding,
-        learning and talking to other people. Primarily I work with React, React
-        Native and Node.js. Here is my{' '}
+        learning and talking to other people. Here is my{' '}
         <a
           href="https://github.com/kulyk"
           target="_blank"
