@@ -18,7 +18,14 @@ function NavBar(props: Props): React.ReactElement {
           <img id="my-photo" src="/me-min.jpg" alt="Anton" />
           <h3 id="my-name">Anton Kulyk</h3>
         </Link>
-        <button onClick={toggle}>{isLight ? 'Dark' : 'Light'}</button>
+        <div id="nav-right">
+          <div id="nav-links">
+            <Link href="/about">
+              <a href="/about">About</a>
+            </Link>
+          </div>
+          <button onClick={toggle}>{isLight ? 'Dark' : 'Light'}</button>
+        </div>
       </nav>
       <style jsx global>{`
         #nav {
@@ -48,6 +55,14 @@ function NavBar(props: Props): React.ReactElement {
         }
         #my-name {
           margin-left: 12px;
+        }
+        #nav-right {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        #nav-links {
+          margin-right: 22px;
         }
       `}</style>
     </>
