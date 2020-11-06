@@ -30,6 +30,11 @@ const Post: NextPage<unknown> = () => {
           which unfortunately are under NDA.
         </p>
         <p>
+          Also, I&apos;m a Ukrainian{' '}
+          <a href="https://makerfaire.com">Maker Faire</a> producer & hackathons
+          organizer.
+        </p>
+        <p>
           This is my personal corner on the Internet. Here I keep my thoughts
           and ideas about better ways to build software I find while coding,
           learning and talking to other people.
