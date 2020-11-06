@@ -47,7 +47,7 @@ At work I try to ask myself the following questions as much as possible: _do we 
 
 ---
 
-We don't develop our own databases, we use RDBMSes. We don't develop programming languages and frameworks. We use Ruby on Rails, Django, etc. So why do we come up doing thing we're not making money from? What has been done many many times before us.
+We don't develop our own databases, we use Postgres, MySQL, etc. We don't develop programming languages and frameworks. We use Ruby on Rails, Django, etc. So why do we come up doing thing we're not making money from? What has been done many many times before us.
 
 Reasons to use a complete long living solution:
 
