@@ -2,67 +2,76 @@
 title: Less Code is More
 emoji: ✨
 slug: less-code-is-more
-description: Why Good Software Engineers delete code, rather than write
-publishedAt: '2020-04-16T23:18:17.522Z'
+description: The advantages of not-invented-here solutions
+publishedAt: '2020-11-06T10:30:54.668Z'
 ---
 
-The term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species 'Species') of [pine](https://en.wikipedia.org/wiki/Pine 'Pine') tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae 'Pinaceae'), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus 'Pinus'), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth.
+A beginner developer usually believes their key activity is writing code. This is wrong. Solving a problem with code is actually the most expensive way to do something.
 
-The oldest _Pinus longaeva_ is more than 5,000 years old, making it the oldest known individual of any species.
+1. Code breaks all the time. There is always that edge case nobody has thought about, some unexpected input or system state.
+2. You've married your code and you made a vow to support it until the end of your days. Monitor it works correctly, fix it here and there, update libraries, monitor the infrastructure it's running at, etc.
+3. It can become a blocker when doing something meaningful
+4. Other developers need to learn that and keep it in mind while designing other stuff
 
-## Headline
+Writing code is a serious and expensive commitment, you have to be really sure this is **the best** way to solve your problem.
 
-Despite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession 'Primary succession') species, tending to occupy new open ground. They generally compete poorly in less-than-harsh environments, making them hard to cultivate. In gardens, they succumb quickly to root rot. They do very well, however, where most other plants cannot even grow, such as in rocky soils in areas with virtually no rainfall.
+Intercom suggests to [rarely say yes to new features](https://www.intercom.com/blog/rarely-say-yes-to-feature-requests/). Because new features come with huge costs today and even bigger costs tomorrow, when you try to build a new thing on top of existing functionality.
 
-## Example
+So, if good product managers try to avoid new features in their products, should we develop things that are not a part of our core product?
 
-![demo-image](/demo.jpg)
+At work I try to ask myself the following questions as much as possible: _do we deliver value with that?_ (_do we earn money with that?)_ or _is that a part of our core product?_
 
-## Headline 2
+---
 
-Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
+— Wrote your own caching utility for your small project?
 
-```bash
-yarn add some-library
-yarn run-some-command
+— Do we earn money selling caching service?
+
+— No. Use Redis, memcached, whatever
+
+---
+
+— Setting up customer support ticketing system on your backend and frontend?
+
+— Do we earn money selling customer support SaaS solution?
+
+— No. Use Zendesk, Intercom, whatever
+
+---
+
+— Creating your own CMS?
+
+— Do we sell the CMS?
+
+— No, use Contentful, WordPress, whatever
+
+---
+
+We don't develop our own databases, we use RDBMSes. We don't develop programming languages and frameworks. We use Ruby on Rails, Django, etc. So why do we come up doing thing we're not making money from? What has been done many many times before us.
+
+Reasons to use a complete long living solution:
+
+- it's tested for you, you don't spend time doing that
+- it stepped on all the rakes, met all the edge-cases and fixed it
+- it frees up your time, so you can focus on important things
+- if it's a SaaS, they'll make it better in time
+
+## But it costs money!
+
+First of all, a lot of companies [offer sweet discounts for startups](http://freefor.dev)
+
+Next, you need to compare how many time you're going to spend supporting your custom solutions (while not developing or improving your core business service) with a price you can spend on a subscription
+
+### Cost of Automation
+
+You need good reasons to decide to automate something. Time you gonna spend automating and supporting the automation must be less than time doing it manually. Calc that before doing smth
+
+```
+Time to Automate + (Time to Support / Year) > Time to do it Manually / Year
 ```
 
-```javascript
-class Animal {
-  sound() {}
-}
+## Conclusion
 
-class Cat extends Animal {
-  sound() {
-    return 'Meow!';
-  }
-}
-```
+At the end, a developer's key activity is not writing code, it's delivering value and solving problems. And complete solutions help you focus on the important and deliver the most value.
 
-## Headline 3
-
-Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
-
-- `yarn`
-- `sudo gem install cocoapods`
-- `cd ios && pod install`
-
-Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
-
-1. List Item 1
-2. List Item 2
-3. List Item 3
-4. List Item 4
-5. List Item 5
-
-Bristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine 'Subalpine') groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States 'Western United States'). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone 'Conifer cone') [seed plants](https://en.wikipedia.org/wiki/Seed_plant 'Seed plant') commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer 'Conifer'); the name comes from the prickles on the female cones.
-
-## Head 2
-
-### Head 3
-
-#### Head 4
-
-##### Head 5
-
-###### Head 6
+Contentful and some homemade CMS solve the same problem, but do they deliver the same value? Can I schedule posts? Can I post to Facebook too? Can I filter articles by publishing date? That's the thing.
