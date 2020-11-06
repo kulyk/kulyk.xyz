@@ -24,7 +24,9 @@ function NavBar(props: Props): React.ReactElement {
               <a href="/about">About</a>
             </Link>
           </div>
-          <button onClick={toggle}>{isLight ? 'Dark' : 'Light'}</button>
+          <button id="theme-toggle" onClick={toggle}>
+            {isLight ? '🌙' : '☀️'}
+          </button>
         </div>
       </nav>
       <style jsx global>{`
@@ -62,7 +64,10 @@ function NavBar(props: Props): React.ReactElement {
           align-items: center;
         }
         #nav-links {
-          margin-right: 22px;
+          margin-right: 8px;
+        }
+        #theme-toggle {
+          background-color: transparent;
         }
       `}</style>
     </>
