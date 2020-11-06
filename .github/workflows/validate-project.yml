@@ -9,7 +9,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2.1.2
+      - name: Cache Dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.yarn
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
       - name: Install dependencies
-        run: yarn --non-interactive --silent
+        run: yarn --non-interactive --silent --frozen-lockfile
       - name: Validate project
         run: yarn validate-project
