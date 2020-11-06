@@ -64,16 +64,13 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
         <div className="article-preview">
           <div className="article-preview-main">
             <h2 className="title">{`${emoji} ${title}`}</h2>
-            <p className="secondary description">{description}</p>
+            <p className="secondary">{publishedAt}</p>
           </div>
-          <p className="secondary">{publishedAt}</p>
+          <p className="secondary description">{description}</p>
         </div>
       </Link>
       <style jsx>{`
         .article-preview {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
           padding: 10px;
           margin: 8px 0 8px 0;
           border-radius: 8px;
@@ -83,14 +80,17 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
           cursor: pointer;
         }
         .article-preview-main {
-          flex: 0.9;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
         }
         .title {
           font-weight: 500;
           font-size: 1.2rem;
         }
         .description {
-          margin-top: 3px;
+          margin-top: 8px;
         }
       `}</style>
     </>

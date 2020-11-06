@@ -2,6 +2,15 @@ import format from 'date-fns/format';
 import parseISO from 'date-fns/parseISO';
 import Config from './config';
 
+function isMobile(): boolean {
+  if (!navigator) {
+    return false;
+  }
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent,
+  );
+}
+
 export function getUrl(path: string): string {
   return `${Config.SITE_URL}/${path}`;
 }
@@ -12,7 +21,8 @@ export function getPostFullUrl(slug: string): string {
 
 export function formatPubDate(dateISO: string): string {
   const publishedDate = parseISO(dateISO);
-  return format(publishedDate, 'dd MMMM');
+  const fmt = isMobile() ? 'dd MMM' : 'dd MMMM';
+  return format(publishedDate, fmt);
 }
 
 export function getRandomInt(min: number, max: number): number {
