@@ -1,5 +1,4 @@
 const withPlugins = require('next-compose-plugins');
-const withCSS = require('@zeit/next-css');
 const withSourceMaps = require('@zeit/next-source-maps');
 const withBundleAnalyzer = require('@next/bundle-analyzer');
 
@@ -34,7 +33,7 @@ const config = {
   },
 };
 
-const plugins = [withCSS, withSourceMaps];
+const plugins = [withSourceMaps];
 
 if (process.env.ANALYZE === 'true') {
   plugins.push(withBundleAnalyzer({enabled: true}));
