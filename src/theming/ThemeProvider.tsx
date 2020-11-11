@@ -4,6 +4,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useMemo,
   useState,
 } from 'react';
 import {Theme} from './types';
@@ -54,10 +55,14 @@ function ThemeProvider(props: Props): React.ReactElement {
     setInitialized(true);
   }, [initialized, isLight]);
 
+  const value = useMemo(() => ({theme, isLight, toggle}), [
+    theme,
+    isLight,
+    toggle,
+  ]);
+
   return (
-    <ThemeContext.Provider value={{theme, isLight, toggle}}>
-      {initialized ? children : <div />}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 }
 

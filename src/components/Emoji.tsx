@@ -7,11 +7,16 @@ type Props = {
   children: string;
 };
 
+function isAppleDevice(): boolean {
+  return /iPad|iPhone|iPod|Mac/.test(navigator.userAgent) && !window.MSStream;
+}
+
 function Emoji(props: Props): React.ReactElement {
   const {id, name, children} = props;
-  const isAppleDevice =
-    /iPad|iPhone|iPod|Mac/.test(navigator.userAgent) && !window.MSStream;
-  const Render = isAppleDevice ? EmojiRender : Emojione;
+  if (typeof window === 'undefined') {
+    return <span id={id} role="img" aria-label={`${name} emoji`} />;
+  }
+  const Render = isAppleDevice() ? EmojiRender : Emojione;
   return (
     <span id={id} role="img" aria-label={`${name} emoji`}>
       <Render text={children} />
