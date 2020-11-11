@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import {useTheme} from '../theming';
 import InlineCode from './InlineCode';
 import Code from './Code';
 
@@ -56,6 +57,37 @@ function ParagraphRenderer(props: {
   );
 }
 
+function BlockQuoteRenderer(props: {
+  children: React.ReactNode;
+}): React.ReactElement {
+  const {theme} = useTheme();
+  return (
+    <>
+      <blockquote>{props.children}</blockquote>
+      <style jsx global>{`
+        blockquote {
+          background-color: ${theme.code.background};
+          color: ${theme.code.text};
+          border-radius: 6px;
+          padding: 12px 18px;
+          text-align: left;
+          white-space: pre-wrap;
+          word-spacing: normal;
+          word-break: normal;
+          margin: 0;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+        }
+        blockquote > p.paragraph {
+          margin: 0.5em 1em !important;
+        }
+      `}</style>
+    </>
+  );
+}
+
 function CodeRenderer(props: {
   value: string;
   language: string;
@@ -97,6 +129,7 @@ function ListItemRenderer(props: {
 const styledMarkdown = {
   heading: HeadingRenderer,
   paragraph: ParagraphRenderer,
+  blockquote: BlockQuoteRenderer,
   code: CodeRenderer,
   inlineCode: InlineCode,
   image: ImageRenderer,

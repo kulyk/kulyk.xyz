@@ -21,31 +21,23 @@ So, if good product managers try to avoid new features in their products, should
 
 At work I try to ask myself the following questions as much as possible: _do we deliver value with that?_ (_do we earn money with that?)_ or _is that a part of our core product?_
 
----
+> — Wrote your own caching utility for your small project?
+>
+> — Do we earn money selling caching service?
+>
+> — 🙅‍♂️ No, use Redis, memcached, whatever
 
-— Wrote your own caching utility for your small project?
+> — Setting up customer support ticketing system on your backend and frontend?
+>
+> — Do we earn money selling customer support SaaS solution?
+>
+> — 🙅‍♂️ No, use Zendesk, Intercom, whatever
 
-— Do we earn money selling caching service?
-
-— No. Use Redis, memcached, whatever
-
----
-
-— Setting up customer support ticketing system on your backend and frontend?
-
-— Do we earn money selling customer support SaaS solution?
-
-— No. Use Zendesk, Intercom, whatever
-
----
-
-— Creating your own CMS?
-
-— Do we sell the CMS?
-
-— No, use Contentful, WordPress, whatever
-
----
+> — Creating your own CMS?
+>
+> — Do we sell the CMS?
+>
+> — 🙅‍♂️ No, use Contentful, WordPress, whatever
 
 We don't develop our own databases, we use Postgres, MySQL, etc. We don't develop programming languages and frameworks. We use Ruby on Rails, Django, etc. So why do we come up doing thing we're not making money from? What has been done many many times before us.
 
