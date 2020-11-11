@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {"source": "/feed", "destination": "/feed.xml"},
+    {"source": "/rss", "destination": "/feed.xml"},
+    {
+      "source": "/admin",
+      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "source": "/wp-admin.php",
+      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/feed.xml",
+      "headers": [{"key": "Access-Control-Allow-Origin", "value": "*"}]
+    }
+  ]
+}
