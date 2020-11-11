@@ -11,6 +11,27 @@ const config = {
     });
     return config;
   },
+  async redirects() {
+    return [
+      {source: '/feed', destination: '/feed.xml', permanent: true},
+      {source: '/rss', destination: '/feed.xml', permanent: true},
+      {
+        source: '/admin',
+        destination: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        permanent: true,
+      },
+      {
+        source: '/wp-admin',
+        destination: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        permanent: true,
+      },
+      {
+        source: '/wp-admin.php',
+        destination: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 const plugins = [withCSS, withSourceMaps];
