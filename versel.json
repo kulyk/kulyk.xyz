@@ -1,18 +1,21 @@
 {
   "redirects": [
-    {"source": "/feed", "destination": "/feed.xml"},
-    {"source": "/rss", "destination": "/feed.xml"},
+    {"source": "/feed", "destination": "/feed.xml", "permanent": true},
+    {"source": "/rss", "destination": "/feed.xml", "permanent": true},
     {
       "source": "/admin",
-      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "permanent": true
     },
     {
       "source": "/wp-admin",
-      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "permanent": true
     },
     {
       "source": "/wp-admin.php",
-      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "destination": "/https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "permanent": true
     }
   ],
   "headers": [
