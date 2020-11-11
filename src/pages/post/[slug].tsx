@@ -1,4 +1,5 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
+import dynamic from 'next/dynamic';
 import {NextSeo} from 'next-seo';
 import {
   FacebookIcon,
@@ -10,7 +11,11 @@ import {PostCollection, Post as PostType} from '../../posts';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
 import Markdown from '../../components/Markdown';
-import {formatPubDate, getPostFullUrl} from '../../utils';
+import {getPostFullUrl} from '../../utils';
+
+const PublishedAt = dynamic(() => import('../../components/PublishedAt'), {
+  ssr: false,
+});
 
 function ShareSection({url}: {url: string}): React.ReactElement {
   return (
@@ -65,7 +70,6 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const {post, content} = props;
   const {title, description} = post;
   const postUrl = getPostFullUrl(post.slug);
-  const publishedAt = formatPubDate(post.publishedAt);
   return (
     <>
       <NextSeo
@@ -88,7 +92,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         <h1>{title}</h1>
         <div className="about-article">
           <h3 className="description secondary">{description}</h3>
-          <p className="secondary">{publishedAt}</p>
+          <PublishedAt publishedAt={post.publishedAt} />
         </div>
         <article id="post">
           <Markdown content={content} />
