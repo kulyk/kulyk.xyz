@@ -1,4 +1,5 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
+import dynamic from 'next/dynamic';
 import {NextSeo} from 'next-seo';
 import {
   FacebookIcon,
@@ -10,9 +11,13 @@ import {PostCollection, Post as PostType} from '../../posts';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
 import Markdown from '../../components/Markdown';
-import {formatPubDate, getPostFullUrl} from '../../utils';
+import {getPostFullUrl} from '../../utils';
 
-function ShareSection(): React.ReactElement {
+const PublishedAt = dynamic(() => import('../../components/PublishedAt'), {
+  ssr: false,
+});
+
+function ShareSection({url}: {url: string}): React.ReactElement {
   return (
     <>
       <section id="share-root">
@@ -24,12 +29,10 @@ function ShareSection(): React.ReactElement {
             <Emoji name="pray">🙏</Emoji>
           </p>
           <div>
-            <TwitterShareButton
-              url={window.location.href}
-              style={{marginRight: 16}}>
+            <TwitterShareButton url={url} style={{marginRight: 16}}>
               <TwitterIcon size={40} round />
             </TwitterShareButton>
-            <FacebookShareButton url={window.location.href}>
+            <FacebookShareButton url={url}>
               <FacebookIcon size={40} round />
             </FacebookShareButton>
           </div>
@@ -66,17 +69,17 @@ type PostPageProps = {
 const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const {post, content} = props;
   const {title, description} = post;
-  const publishedAt = formatPubDate(post.publishedAt);
+  const postUrl = getPostFullUrl(post.slug);
   return (
     <>
       <NextSeo
-        canonical={getPostFullUrl(post.slug)}
+        canonical={postUrl}
         openGraph={{
           title,
           description,
           type: 'website',
           locale: 'en_US',
-          url: getPostFullUrl(post.slug),
+          url: postUrl,
           site_name: 'Anton Kulyk',
         }}
         twitter={{
@@ -89,12 +92,12 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         <h1>{title}</h1>
         <div className="about-article">
           <h3 className="description secondary">{description}</h3>
-          <p className="secondary">{publishedAt}</p>
+          <PublishedAt publishedAt={post.publishedAt} />
         </div>
         <article id="post">
           <Markdown content={content} />
         </article>
-        <ShareSection />
+        <ShareSection url={postUrl} />
       </Layout>
       <style jsx>{`
         .about-article {

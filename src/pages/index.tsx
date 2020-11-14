@@ -1,11 +1,15 @@
 import {NextPage, GetStaticProps} from 'next';
+import dynamic from 'next/dynamic';
 import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
 import Emoji from '../components/Emoji';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
-import {formatPubDate} from '../utils';
+
+const PublishedAt = dynamic(() => import('../components/PublishedAt'), {
+  ssr: false,
+});
 
 function Intro(): React.ReactElement {
   return (
@@ -55,8 +59,7 @@ type ArticlePreviewProps = {
 };
 
 function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
-  const {title, description, emoji, slug} = props.post;
-  const publishedAt = formatPubDate(props.post.publishedAt);
+  const {title, description, emoji, slug, publishedAt} = props.post;
   const {theme} = useTheme();
   return (
     <>
@@ -64,7 +67,7 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
         <div className="article-preview">
           <div className="article-preview-main">
             <h2 className="title">{`${emoji} ${title}`}</h2>
-            <p className="secondary">{publishedAt}</p>
+            <PublishedAt publishedAt={publishedAt} />
           </div>
           <p className="secondary description">{description}</p>
         </div>

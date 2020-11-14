@@ -3,9 +3,6 @@ import parseISO from 'date-fns/parseISO';
 import Config from './config';
 
 function isMobile(): boolean {
-  if (!navigator) {
-    return false;
-  }
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent,
   );

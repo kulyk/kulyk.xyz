@@ -1,8 +1,8 @@
 User-agent: *
 
 Allow: /
-Sitemap: https://kulyk.xyz/sitemap.xml
-Host: https://kulyk.xyz
+Sitemap: https://antonkulyk.com/sitemap.xml
+Host: https://antonkulyk.com
 
 User-agent: Nutch
 Disallow: /
