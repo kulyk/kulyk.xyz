@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "@babel/preset-typescript": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.7",
     "@next/bundle-analyzer": "^10.0.2",
     "@types/classnames": "^2.2.11",
     "@types/glob": "^7.1.3",
