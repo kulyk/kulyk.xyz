@@ -3,7 +3,7 @@ import {NextSeo} from 'next-seo';
 import {Emoji, Layout} from '../components';
 import {getUrl} from '../utils';
 
-const Post: NextPage<unknown> = () => {
+const About: NextPage<unknown> = () => {
   return (
     <>
       <NextSeo
@@ -57,4 +57,4 @@ const Post: NextPage<unknown> = () => {
   );
 };
 
-export default Post;
+export default About;
