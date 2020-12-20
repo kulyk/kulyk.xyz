@@ -3,7 +3,7 @@ title: Almanac of Naval Ravikant
 emoji: 📚
 slug: almanac-of-naval-ravikant
 description: 10/10 Book | Wealth, Happiness, Rock-n-Roll
-publishedAt: '2020-12-20T22:30:00.668Z'
+publishedAt: '2020-12-19T22:30:00.668Z'
 ---
 
 In November, I've read a pretty small, yet my strong 10/10 book [The Almanac of Naval Ravikant](https://www.navalmanack.com)
