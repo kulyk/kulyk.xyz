@@ -112,7 +112,7 @@ function Articles(props: ArticlesBlockProps): React.ReactElement {
   return (
     <>
       <section id="articles">
-        <h1>Articles</h1>
+        <h1>Writing</h1>
         {props.posts.map(renderPreview)}
       </section>
       <style jsx>{`
