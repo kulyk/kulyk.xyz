@@ -142,6 +142,7 @@ function Markdown(props: Props): React.ReactElement {
     <ReactMarkdown
       source={content}
       className="markdown-container"
+      linkTarget="_blank"
       renderers={styledMarkdown}
     />
   );
