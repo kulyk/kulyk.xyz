@@ -12,6 +12,7 @@ A beginner developer usually believes their key activity is writing code. This i
 2. You marry your code and you make a vow to support it until the end of your days. Monitor it works correctly, fix it here and there, update libraries, monitor the infrastructure it's running at, etc.
 3. Each feature can become a blocker when doing something meaningful. Imagine a user can delete their account in your chat application. Having that feature requires you to design a lot of new interactions. What should we do with user's messages after their account is deleted? If a deleted user has previously shared an invitation link to some chat, will it still be valid?
 4. Other developers need to learn that and keep it in mind while designing other stuff
+5. And [many more reasons](https://twitter.com/johncutlefish/status/1335822976957247489)
 
 Writing code is a serious and expensive commitment, you have to be really sure this is **the best** way to solve your problem.
 
