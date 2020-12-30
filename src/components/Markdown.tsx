@@ -8,6 +8,8 @@ import {useTheme} from '../theming';
 import InlineCode from './InlineCode';
 import Code from './Code';
 
+const LINE_HEIGHT = 1.65;
+
 type Props = {
   content: string;
 };
@@ -49,7 +51,7 @@ function ParagraphRenderer(props: {
       <p className="paragraph">{props.children}</p>
       <style jsx>{`
         .paragraph {
-          line-height: 24px;
+          line-height: ${LINE_HEIGHT};
           margin: 0px 0 24px 0;
         }
       `}</style>
@@ -119,6 +121,7 @@ function ListItemRenderer(props: {
       <li className="list-item">{children}</li>
       <style jsx>{`
         .list-item {
+          line-height: ${LINE_HEIGHT};
           margin: 10px 0;
         }
       `}</style>
