@@ -9,10 +9,11 @@ import {
 } from 'react-share';
 import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
+import {hydrate} from '../../mdx/hydrate';
+import {renderToString} from '../../mdx/render-to-string';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
 import Newsletter from '../../components/Newsletter';
-import Markdown from '../../components/Markdown';
 import {getPostFullUrl} from '../../utils';
 
 const PublishedAt = dynamic(() => import('../../components/PublishedAt'), {
@@ -97,9 +98,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
           <h3 className="description secondary">{description}</h3>
           <PublishedAt publishedAt={post.publishedAt} />
         </div>
-        <article id="post">
-          <Markdown content={content} />
-        </article>
+        <article id="post">{hydrate(content)}</article>
         <ShareSection url={postUrl} />
         <Newsletter />
       </Layout>
@@ -150,7 +149,8 @@ export const getStaticProps: GetStaticProps<
   }
   const collection = new PostCollection();
   const {post, content} = await collection.findBySlug(slug);
-  return {props: {post, content}};
+  const mdxContent = await renderToString(content);
+  return {props: {post, content: mdxContent}};
 };
 
 export default Post;
