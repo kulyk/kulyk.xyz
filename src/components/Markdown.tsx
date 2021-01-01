@@ -26,7 +26,7 @@ const headingLevel = {
   6: (props: HeadingProps): React.ReactElement => <h6 {...props} />,
 };
 
-function HeadingRenderer(props: {
+export function HeadingRenderer(props: {
   children: React.ReactNode;
   level: 1 | 2 | 3 | 4 | 5 | 6;
 }): React.ReactElement {
@@ -44,7 +44,7 @@ function HeadingRenderer(props: {
   );
 }
 
-function ParagraphRenderer(props: {
+export function ParagraphRenderer(props: {
   children: React.ReactNode;
 }): React.ReactElement {
   return (
@@ -60,7 +60,7 @@ function ParagraphRenderer(props: {
   );
 }
 
-function BlockQuoteRenderer(props: {
+export function BlockQuoteRenderer(props: {
   children: React.ReactNode;
 }): React.ReactElement {
   const {theme} = useTheme();
@@ -91,14 +91,17 @@ function BlockQuoteRenderer(props: {
   );
 }
 
-function CodeRenderer(props: {
+export function CodeRenderer(props: {
   value: string;
   language: string;
 }): React.ReactElement {
   return <Code code={props.value} language={props.language} />;
 }
 
-function ImageRenderer(props: {src: string; alt: string}): React.ReactElement {
+export function ImageRenderer(props: {
+  src: string;
+  alt: string;
+}): React.ReactElement {
   const {src, alt} = props;
   return (
     <>
@@ -113,7 +116,7 @@ function ImageRenderer(props: {src: string; alt: string}): React.ReactElement {
   );
 }
 
-function ListItemRenderer(props: {
+export function ListItemRenderer(props: {
   children: React.ReactNode;
 }): React.ReactElement {
   const {children} = props;
