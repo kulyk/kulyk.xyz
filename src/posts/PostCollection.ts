@@ -15,7 +15,7 @@ type ParsedPost = {
 
 class BasePostCollection {
   private filePathToSlug(filePath: string): string {
-    return path.basename(filePath, '.md');
+    return path.basename(filePath, '.mdx');
   }
 
   private parsePost(file: string): ParsedPost {
@@ -37,7 +37,7 @@ class BasePostCollection {
   }
 
   getAllPostSlugs(): string[] {
-    const postPaths = glob.sync('./src/posts/**/*.md');
+    const postPaths = glob.sync('./src/posts/**/*.mdx');
     return postPaths.map(filePath => this.filePathToSlug(filePath));
   }
 
@@ -62,14 +62,14 @@ class BasePostCollection {
 
 export class PostCollection extends BasePostCollection {
   protected async readPostFile(slug: string): Promise<string> {
-    const file = await import(`./content/${slug}.md`);
+    const file = await import(`./content/${slug}.mdx`);
     return file.default;
   }
 }
 
 export class PostCollectionScripted extends BasePostCollection {
   protected async readPostFile(slug: string): Promise<string> {
-    const filePath = path.join(__dirname, `./content/${slug}.md`);
+    const filePath = path.join(__dirname, `./content/${slug}.mdx`);
     return readFileAsync(filePath, {encoding: 'utf8'});
   }
 }
