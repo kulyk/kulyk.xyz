@@ -112,6 +112,10 @@ function Page(props: PageProps): React.ReactElement {
           background-color: ${theme.button.hover};
         }
 
+        button:disabled:hover {
+          background-color: ${theme.button.background};
+        }
+
         a:hover {
           color: ${theme.link.hover};
         }
