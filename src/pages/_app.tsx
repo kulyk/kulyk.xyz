@@ -62,6 +62,15 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
           border-radius: 5px;
         }
 
+        button:hover {
+          cursor: pointer;
+        }
+
+        button:disabled {
+          cursor: not-allowed;
+          opacity: 0.3;
+        }
+
         input {
           border-style: solid;
           border-width: 1px;
