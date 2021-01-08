@@ -3,6 +3,7 @@ title: Less Code is More
 emoji: ✨
 slug: less-code-is-more
 description: The advantages of not-invented-here solutions
+banner: less-code-is-more.png
 publishedAt: '2020-11-06T10:30:54.668Z'
 ---
 

@@ -21,6 +21,11 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
           type: 'website',
           locale: 'en_US',
           url: Config.SITE_URL,
+          images: [
+            {
+              url: Config.getUrl('banners/main.png'),
+            },
+          ],
           site_name: 'Anton Kulyk',
         }}
         twitter={{
