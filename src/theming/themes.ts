@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/no-duplicate-string */
+
 import {Theme} from './types';
 
 export const LightTheme: Theme = {
