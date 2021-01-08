@@ -5,6 +5,7 @@ import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
 import Emoji from '../components/Emoji';
 import Layout from '../components/Layout';
+import Newsletter from '../components/Newsletter';
 import Link from '../components/Link';
 
 const PublishedAt = dynamic(() => import('../components/PublishedAt'), {
@@ -114,6 +115,7 @@ function Articles(props: ArticlesBlockProps): React.ReactElement {
       <section id="articles">
         <h1>Writing</h1>
         {props.posts.map(renderPreview)}
+        <Newsletter />
       </section>
       <style jsx>{`
         h1 {

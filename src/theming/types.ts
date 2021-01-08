@@ -28,4 +28,11 @@ export type Theme = {
   icon: {
     background: string;
   };
+  card: {
+    background: string;
+  };
+  success: string;
+  successText: string;
+  error: string;
+  errorText: string;
 };

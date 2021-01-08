@@ -10,6 +10,7 @@ import {
 import {PostCollection, Post as PostType} from '../../posts';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
+import Newsletter from '../../components/Newsletter';
 import Markdown from '../../components/Markdown';
 import {getPostFullUrl} from '../../utils';
 
@@ -24,7 +25,7 @@ function ShareSection({url}: {url: string}): React.ReactElement {
         <h2 id="hey">Do you have a moment?</h2>
         <div id="share-container">
           <p id="share-title">
-            Hi, I&apos;m new to blogging. If you liked the article, please share
+            Hi, I&apos;m new to blogging. If you enjoyed the post, please share
             it on Facebook or Twitter, it will help me a lot{' '}
             <Emoji name="pray">🙏</Emoji>
           </p>
@@ -40,7 +41,7 @@ function ShareSection({url}: {url: string}): React.ReactElement {
       </section>
       <style jsx>{`
         #share-root {
-          margin-top: 100px;
+          margin-top: 80px;
         }
 
         #share-container {
@@ -98,6 +99,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
           <Markdown content={content} />
         </article>
         <ShareSection url={postUrl} />
+        <Newsletter />
       </Layout>
       <style jsx>{`
         .about-article {
