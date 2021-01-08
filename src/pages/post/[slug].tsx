@@ -7,6 +7,7 @@ import {
   TwitterIcon,
   TwitterShareButton,
 } from 'react-share';
+import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
@@ -82,6 +83,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
           locale: 'en_US',
           url: postUrl,
           site_name: 'Anton Kulyk',
+          images: [{url: Config.getUrl(`banners/${post.banner}`)}],
         }}
         twitter={{
           handle: '@anton_kulyk',
