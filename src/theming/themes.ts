@@ -30,6 +30,13 @@ export const LightTheme: Theme = {
   icon: {
     background: 'rgba(0, 0, 0, 0.15)',
   },
+  card: {
+    background: 'rgba(0, 0, 0, 0.05)',
+  },
+  success: '#34C759',
+  successText: '#fff',
+  error: '#FF3B30',
+  errorText: '#fff',
 };
 
 export const DarkTheme: Theme = {
@@ -62,4 +69,11 @@ export const DarkTheme: Theme = {
   icon: {
     background: 'rgba(58, 58, 60, 0.4)',
   },
+  card: {
+    background: 'rgba(58, 58, 60, 0.4)',
+  },
+  success: '#30D158',
+  successText: '#fff',
+  error: '#FF453A',
+  errorText: '#fff',
 };
