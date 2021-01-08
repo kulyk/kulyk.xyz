@@ -35,6 +35,7 @@ function Page(props: PageProps): React.ReactElement {
         <title>{getPageTitle(title)}</title>
         {description && <meta name="description" content={description} />}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="preload" as="font" type="font/ttf" href="/fonts/Inter.ttf" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

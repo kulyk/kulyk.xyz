@@ -4,6 +4,7 @@ import Config from '../config';
 import {ThemeProvider} from '../theming';
 
 const fonts = [
+  "'Inter'",
   '-apple-system',
   'BlinkMacSystemFont',
   "'Helvetica Neue'",
