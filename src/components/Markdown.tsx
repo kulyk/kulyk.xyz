@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 import {useTheme} from '../theming';
 import InlineCode from './InlineCode';
 import Code from './Code';
@@ -147,6 +148,7 @@ function Markdown(props: Props): React.ReactElement {
       className="markdown-container"
       linkTarget="_blank"
       renderers={styledMarkdown}
+      plugins={[gfm]}
     />
   );
 }
