@@ -1,4 +1,8 @@
 import {AppProps} from 'next/app';
+import Router from 'next/router';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import withGA from 'next-ga';
 import {DefaultSeo} from 'next-seo';
 import Config from '../config';
 import {ThemeProvider} from '../theming';
@@ -89,4 +93,4 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
   );
 }
 
-export default App;
+export default withGA(process.env.NEXT_PUBLIC_ANALYTICS_ID, Router)(App);
