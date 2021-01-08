@@ -14,7 +14,7 @@
     "generate-sitemap": "yarn run-script ./src/scripts/sitemap.ts",
     "generate-feed": "yarn run-script ./src/scripts/rss.tsx",
     "build": "next build",
-    "export": "yarn build && next export && yarn generate-sitemap && yarn generate-feed",
+    "export": "yarn build && yarn generate-sitemap && yarn generate-feed",
     "analyze-bundle": "ANALYZE=true yarn build",
     "validate-project": "npm-run-all check-types check-format lint export"
   },
