@@ -23,7 +23,7 @@ function getPageTitle(title?: string): string {
   if (!title) {
     return base;
   }
-  return `${base} — ${title}`;
+  return `${title} | ${base}`;
 }
 
 function Page(props: PageProps): React.ReactElement {
