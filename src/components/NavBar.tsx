@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from './Link';
-import {useTheme} from '../theming';
+import {ThemeSwitch} from './ThemeSwitch';
 
 type Props = {
   width: string;
@@ -9,7 +9,6 @@ type Props = {
 };
 
 function NavBar(props: Props): React.ReactElement {
-  const {isLight, toggle} = useTheme();
   const {width, height, backgroundColor} = props;
   return (
     <>
@@ -24,9 +23,7 @@ function NavBar(props: Props): React.ReactElement {
               <a href="/about">About</a>
             </Link>
           </div>
-          <button id="theme-toggle" onClick={toggle}>
-            {isLight ? '🌙' : '☀️'}
-          </button>
+          <ThemeSwitch />
         </div>
       </nav>
       <style jsx global>{`
@@ -64,10 +61,7 @@ function NavBar(props: Props): React.ReactElement {
           align-items: center;
         }
         #nav-links {
-          margin-right: 8px;
-        }
-        #theme-toggle {
-          background-color: transparent;
+          margin-right: 24px;
         }
       `}</style>
     </>
