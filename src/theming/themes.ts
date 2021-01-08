@@ -27,6 +27,9 @@ export const LightTheme: Theme = {
     background: 'hsla(0,0%,58.8%,.3)',
     text: '#000',
   },
+  icon: {
+    background: 'rgba(0, 0, 0, 0.15)',
+  },
 };
 
 export const DarkTheme: Theme = {
@@ -55,5 +58,8 @@ export const DarkTheme: Theme = {
   code: {
     background: 'hsla(0, 0%, 58.8%, 0.3)',
     text: '#fff',
+  },
+  icon: {
+    background: 'rgba(58, 58, 60, 0.4)',
   },
 };
