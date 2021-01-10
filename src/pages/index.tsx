@@ -6,6 +6,7 @@ import {useTheme} from '../theming';
 import Emoji from '../components/Emoji';
 import Layout from '../components/Layout';
 import Newsletter from '../components/Newsletter';
+import ReadingNow from '../components/ReadingNow';
 import Link from '../components/Link';
 
 const PublishedAt = dynamic(() => import('../components/PublishedAt'), {
@@ -115,14 +116,13 @@ function Articles(props: ArticlesBlockProps): React.ReactElement {
       <section id="articles">
         <h1>Writing</h1>
         {props.posts.map(renderPreview)}
-        <Newsletter />
       </section>
       <style jsx>{`
         h1 {
           padding-bottom: 5px;
         }
         #articles {
-          margin-top: 50px;
+          margin-top: 12px;
         }
       `}</style>
     </>
@@ -136,7 +136,9 @@ type HomePageProps = {
 const Home: NextPage<HomePageProps> = (props: HomePageProps) => (
   <Layout>
     <Intro />
+    <ReadingNow />
     <Articles posts={props.posts} />
+    <Newsletter />
   </Layout>
 );
 
