@@ -60,7 +60,7 @@ Using complete third-party and open-source solutions have a lot of benefits:
 
 ## But it costs money!
 
-First of all, a lot of companies [offer sweet discounts for startups](http://freefor.dev)
+First of all, a lot of companies [offer sweet discounts for startups](https://free-for.dev/)
 
 Next, so is the time you're going to spend developing & supporting your custom solution (while not developing or improving your core business service).
 
