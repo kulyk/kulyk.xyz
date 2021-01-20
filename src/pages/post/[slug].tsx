@@ -11,10 +11,13 @@ import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import {hydrate} from '../../mdx/hydrate';
 import {renderToString} from '../../mdx/render-to-string';
+import {useTheme} from '../../theming';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
 import Newsletter from '../../components/Newsletter';
 import {getPostFullUrl} from '../../utils';
+
+const LINE_HEIGHT = 1.65;
 
 const PublishedAt = dynamic(() => import('../../components/PublishedAt'), {
   ssr: false,
@@ -72,6 +75,7 @@ type PostPageProps = {
 const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const {post, content} = props;
   const {title, description} = post;
+  const {theme} = useTheme();
   const postUrl = getPostFullUrl(post.slug);
   return (
     <>
@@ -102,7 +106,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         <ShareSection url={postUrl} />
         <Newsletter />
       </Layout>
-      <style jsx>{`
+      <style jsx global>{`
         .about-article {
           display: flex;
           flex-direction: row;
@@ -117,6 +121,44 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
 
         #post {
           margin-top: 20px;
+        }
+
+        #post > h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 36px 0 10px 0;
+        }
+
+        p {
+          line-height: ${LINE_HEIGHT};
+          margin: 0px 0 24px 0;
+        }
+
+        li {
+          line-height: ${LINE_HEIGHT};
+          margin: 10px 0;
+        }
+
+        blockquote {
+          background-color: ${theme.code.background};
+          color: ${theme.code.text};
+          border-radius: 6px;
+          padding: 12px 18px;
+          text-align: left;
+          white-space: pre-wrap;
+          word-spacing: normal;
+          word-break: normal;
+          margin: 0;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+        }
+        blockquote > p {
+          margin: 0.5em 1em !important;
         }
       `}</style>
     </>
