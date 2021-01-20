@@ -1,11 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-// import * as React from 'react';
-// import ReactDOM from 'react-dom/server';
 import {Feed} from 'feed';
 import Config from '../config';
 import {PostCollectionScripted} from '../posts';
-// import Markdown from '../components/Markdown';
 import {getPostFullUrl} from '../utils';
 import {DEST} from './common';
 
