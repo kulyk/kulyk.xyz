@@ -36,11 +36,11 @@ The thing is it's mostly impossible to proceed in a career without investing in 
 
 Empathy is a thing that helps you to think and feel from a different's person perspective. At first glance, the value of empathy is pretty obvious.
 
-Nevertheless, empathy is a pretty abstract term. And abstract things are usually **fundamental.** I like the vision of Naval Ravikant on that (you can check my review on a book with his ideas).
+Nevertheless, empathy is a pretty abstract term. And abstract things are usually **fundamental.** I like the vision of Naval Ravikant on that (you can check [my review on a book](/post/almanac-of-naval-ravikant) with his ideas).
 
 > Basic arithmetic and numeracy are way more important in life than doing calculus. Similarly, being able to convey yourself simply using ordinary English words is far more important than being able to write poetry, having an extensive vocabulary, or speaking seven different foreign languages.
-
-Knowing how to be persuasive when speaking is far more important than being an expert digital marketer or click optimizer. Foundations are key. It’s much better to be at 9/10 or 10/10 on foundations than to try and get super deep into things.
+>
+> Knowing how to be persuasive when speaking is far more important than being an expert digital marketer or click optimizer. Foundations are key. It’s much better to be at 9/10 or 10/10 on foundations than to try and get super deep into things.
 
 So, if we dig deep enough, the number of benefits from being empathic is enormous.
 
