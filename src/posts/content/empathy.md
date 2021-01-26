@@ -1,0 +1,128 @@
+---
+title: Empathy is the Game Changing Skill
+emoji: ❤️
+slug: empathy
+description: How empathy boosts efficiency and our careers
+banner: naval.png
+publishedAt: '2021-01-26T13:02:58.152Z'
+---
+
+Developing your career seems very familiar with the development of a character in a game. You have a variety of skills and characteristics like strength, intelligence, charisma, endurance, and so on.
+
+The winners are the ones who've found the best combination of skills and characteristics in their environment. So the question is which skills and characteristics do you need to improve.
+
+Before we think of the optimal strategy, we should find out which skills, characteristics, and paths exist and are valued.
+
+## Software Engineer's Career Paths
+
+Software Engineer's career path can be provisionally split into two branches: the engineering one and the management one.
+
+### Engineering Branch
+
+- fundamental knowledge (algorithms, data structures, operation systems, networks, etc.)
+- system design, software architecture, design patterns, etc.
+- toolkit (programming languages, frameworks, etc.)
+
+### Management Branch
+
+- how to work in a team
+- how to organize a team
+- software development lifecycle, process, and methodologies
+- project & product management
+
+The thing is it's mostly impossible to proceed in a career without investing in both branches. Any CTO and VP of Engineering has to be both technically competent and be a good manager and communicator.
+
+## Empathy Benefits
+
+Empathy is a thing that helps you to think and feel from a different's person perspective. At first glance, the value of empathy is pretty obvious.
+
+Nevertheless, empathy is a pretty abstract term. And abstract things are usually **fundamental.** I like the vision of Naval Ravikant on that (you can check my review on a book with his ideas).
+
+> Basic arithmetic and numeracy are way more important in life than doing calculus. Similarly, being able to convey yourself simply using ordinary English words is far more important than being able to write poetry, having an extensive vocabulary, or speaking seven different foreign languages.
+
+Knowing how to be persuasive when speaking is far more important than being an expert digital marketer or click optimizer. Foundations are key. It’s much better to be at 9/10 or 10/10 on foundations than to try and get super deep into things.
+
+So, if we dig deep enough, the number of benefits from being empathic is enormous.
+
+### Thinking as Your Customer
+
+Usually, it's the product manager's and designer's job. But the thing is they have pretty limited time to think through a user story from a different perspective.
+
+Meanwhile, a developer can work on a single story for several days. Think it over, discover major edge-cases and points of failure.
+
+If the developer isn't empathetic, they don't think about how the end-user would face the feature, they don't raise a discussion in their team. It could result in a decreased UX and missed profits.
+
+An empathetic developer **feels** that a particular product is just one of the ways to solve the problem you are trying to solve. This feeling unlocks a brand new way to look at the business you're doing at your company.
+
+And if you're an empathetic programmer, your value in the eyes of the company, your team, and the market in general will increase many times over.
+
+Stripe has been built by deeply empathetic engineers. There were other billing solutions out there, but it just felt bad how complicated they were.
+
+### Thinking as Your Codebase Co-Maintainer
+
+> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+>
+> — Martin Fowler
+
+To deliver software quickly, our teams have to share the same context and reason about the code and its workflow.
+
+There are dozens of rules on how to write code that is easy to reason about. Code that is predictable and straightforward.
+
+An empathetic developer has an internal background process. It constantly asks:
+
+- _What will they think about the purpose of this function?_
+- _What would they expect from a class called like that?_
+- _Have I seen a similar task solved in our codebase? Can I apply a similar approach so it's easier to understand_
+
+We should study, practice, and follow the best practices. Having this background process just increases the number of times you'll remember about them, accelerating the benefits.
+
+### Thinking as Your Teammate
+
+If you ask a professional engineer for advice, I'm sure a lot of them would be about communications and teamwork. Take [this post](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/) from a person who worked in software for 45 years (!). Just one of the points is purely technical (write tests 🤘).
+
+A lot of great projects can be implemented by a single developer. But usually, the business would like to scale and hire more people.
+
+As more people join the team, the more it's important to be a team player and collaborate effectively.
+
+If you work in a team and you're an empathetic person:
+
+- you write short and meaningful emails and messages. They are followed by fewer questions and more useful actions. Because you ask yourself _What would a person I'm talking to ask me_? _What information is relevant for them and what is not?_
+- you write better commit messages. Because you ask yourself _Will my colleague understand what's the purpose of this commit?_
+- you make better pull requests. You feel that are easier to understand and review. Because you ask yourself _What would my colleagues pay attention to?_ Will the changes be clear? _Will it be easy to review? Maybe I should open a separate PR with the refactorings and then a new one with a feature implementation?_
+- you write better docs. Because you ask yourself _What will the reader need to know about the service I'm documenting? What can be confusing about it? Can I reference a similar approach or a pattern here, so it's easier to understand?_
+- you're a better teammate, mentor, and manager. Because you care about other people's feelings. You're more polite and friendly. You know people (and you as well) make mistakes and you don't blame them for it, you fix root causes. You share useful feedback with the right wording. You're a person who's nice to talk to and have lunch with.
+
+## How to Develop Empathy
+
+### Emotions
+
+I believe the first thing to do is to learn how to handle our own emotions and feelings.
+
+We should allow ourselves to feel. Accept there are no _bad emotions;_ there are things happening and there are our emotional reactions to these things. We should pay more attention to why some things make us feel some way.
+
+This can be locked by trauma or by cultural reasons. For example, in some cultures, it's condemned if a man does not contain his emotions. Developing empathy in such environment can be really difficult.
+
+### Therapy
+
+Psychotherapy is a powerful tool here
+
+- it helps to properly relate to emotions and work with them
+- it creates a periodic process when you reflect on your thoughts and feelings (which is a useful thing to do in A LOT of cases)
+- when you retrospect about feelings and thoughts that make you uncomfortable, you cannot escape and switch to something else. A therapist helps you to process these things, and it's often a source of the greatest insights and progress
+
+One of the greatest insights I found in psychology and therapy is the projection mechanism.
+
+Projection is a defense mechanism of our psyche. Our mind can attribute its own thoughts, feelings, motives to a person, a group of people, or an event. This happens unconditionally, so we have no idea that our _perception_ is biased.
+
+Because of projection, we're very limited in our understanding of others. We never deal with an actual person. It's always a picture, our projection of this person inside our mind. This fact just makes it perfectly clear how important communication is. And I believe it is a kind of fundamental knowledge that unlocks a lot of positive and efficient behaviors.
+
+### Other Ideas
+
+As important as psychotherapy seems to me, I think there are other techniques for developing empathy.
+
+- having time to reflect on your emotions and thoughts helps a lot. This can be done even without therapy. It's just harder not to skip that. Also, you can escape thoughts that make you uncomfortable (usually it's the most important stuff). Meditation can also work
+- do not blame yourself for your emotions. Find out why you feel the way you feel and work with the root cause
+- share your thoughts and feelings with your loved ones more often
+- listen more than you talk
+- ask for personal feedback from your friends and your colleagues. Analyze it and find out ways to improve
+- try as often as possible to put yourself in the other person's shoes. But don't get carried away, sometimes it's important just to ask or say what you think or feel. We are very limited in our understanding of others
