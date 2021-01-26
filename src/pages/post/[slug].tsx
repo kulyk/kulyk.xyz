@@ -10,7 +10,7 @@ import {
 import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import {hydrate} from '../../mdx/hydrate';
-import {renderToString} from '../../mdx/render-to-string';
+import {renderToString, MdxSource} from '../../mdx/render-to-string';
 import {useTheme} from '../../theming';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
@@ -69,7 +69,7 @@ function ShareSection({url}: {url: string}): React.ReactElement {
 
 type PostPageProps = {
   post: PostType;
-  content: string;
+  content: MdxSource;
 };
 
 const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
