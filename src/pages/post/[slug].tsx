@@ -77,6 +77,7 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const {title, description} = post;
   const {theme} = useTheme();
   const postUrl = getPostFullUrl(post.slug);
+  // const mdx = useMemo(() => hydrate(content), [content]);
   return (
     <>
       <NextSeo
@@ -124,25 +125,25 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         }
 
         #post > h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        #post > h2,
+        #post > h3,
+        #post > h4,
+        #post > h5,
+        #post > h6 {
           margin: 36px 0 10px 0;
         }
 
-        p {
+        #post > p {
           line-height: ${LINE_HEIGHT};
           margin: 0px 0 24px 0;
         }
 
-        li {
+        #post li {
           line-height: ${LINE_HEIGHT};
           margin: 10px 0;
         }
 
-        blockquote {
+        #post > blockquote {
           background-color: ${theme.code.background};
           color: ${theme.code.text};
           border-radius: 6px;
@@ -157,7 +158,8 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
           margin-inline-start: 0;
           margin-inline-end: 0;
         }
-        blockquote > p {
+
+        #post > blockquote > p {
           margin: 0.5em 1em !important;
         }
       `}</style>
