@@ -15,6 +15,7 @@ import {useTheme} from '../../theming';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
 import Newsletter from '../../components/Newsletter';
+import {PrismStyle} from '../../components/prismStyle';
 import {getPostFullUrl} from '../../utils';
 
 const LINE_HEIGHT = 1.65;
@@ -77,7 +78,6 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const {title, description} = post;
   const {theme} = useTheme();
   const postUrl = getPostFullUrl(post.slug);
-  // const mdx = useMemo(() => hydrate(content), [content]);
   return (
     <>
       <NextSeo
@@ -163,6 +163,20 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
           margin: 0.5em 1em !important;
         }
       `}</style>
+      <PrismStyle />
+      <style jsx global>{`
+        math {
+          display: block;
+          background-color: ${theme.code.background};
+          border-radius: 6px;
+          padding: 12px 18px;
+          text-align: center;
+        }
+
+        .katex-html {
+          display: none;
+        }
+      `}</style>
     </>
   );
 };
@@ -194,7 +208,12 @@ export const getStaticProps: GetStaticProps<
   const collection = new PostCollection();
   const {post, content} = await collection.findBySlug(slug);
   const mdxContent = await renderToString(content, {scope: post});
-  return {props: {post, content: mdxContent}};
+  return {
+    props: {
+      post,
+      content: mdxContent,
+    },
+  };
 };
 
 export default Post;

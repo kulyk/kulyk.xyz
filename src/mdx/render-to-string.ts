@@ -13,7 +13,20 @@ export function renderToString(
     ...options,
     mdxOptions: {
       ...options?.mdxOptions,
-      remarkPlugins: [require('remark-gfm')],
+      remarkPlugins: [
+        [require('@mavrin/remark-typograf'), {locale: ['en-US']}],
+        require('remark-gfm'),
+        require('remark-external-links'),
+        require('@fec/remark-a11y-emoji'),
+        require('remark-math'),
+        [
+          require('remark-prism'),
+          {
+            transformInlineCode: true,
+          },
+        ],
+      ],
+      rehypePlugins: [require('rehype-katex')],
     },
   });
 }
