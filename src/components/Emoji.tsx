@@ -17,11 +17,9 @@ function Emoji(props: Props): React.ReactElement {
     return <span id={id} role="img" aria-label={`${name} emoji`} />;
   }
   const Render = isAppleDevice() ? EmojiRender : Emojione;
-  return (
-    <span id={id} role="img" aria-label={`${name} emoji`}>
-      <Render text={children} />
-    </span>
-  );
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  return <Render id={id} text={children} aria-label={`${name} emoji`} />;
 }
 
 export default Emoji;
