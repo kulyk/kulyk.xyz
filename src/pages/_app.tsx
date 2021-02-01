@@ -48,6 +48,7 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
           margin: 0;
           padding: 0;
           font-family: ${fonts.join(', ')};
+          font-display: swap;
         }
 
         h1,
