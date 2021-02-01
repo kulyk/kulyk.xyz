@@ -193,7 +193,7 @@ export const getStaticProps: GetStaticProps<
   }
   const collection = new PostCollection();
   const {post, content} = await collection.findBySlug(slug);
-  const mdxContent = await renderToString(content);
+  const mdxContent = await renderToString(content, {scope: post});
   return {props: {post, content: mdxContent}};
 };
 
