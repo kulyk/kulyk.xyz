@@ -20,7 +20,7 @@ function NavBar(props: Props): React.ReactElement {
         <div id="nav-right">
           <div id="nav-links">
             <Link href="/about">
-              <a href="/about">About</a>
+              <p>About</p>
             </Link>
           </div>
           <ThemeSwitch />
