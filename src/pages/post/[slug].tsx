@@ -165,6 +165,10 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
       `}</style>
       <PrismStyle />
       <style jsx global>{`
+        p {
+          overflow: scroll;
+        }
+
         math {
           display: block;
           background-color: ${theme.code.background};
