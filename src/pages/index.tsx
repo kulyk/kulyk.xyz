@@ -65,7 +65,7 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
   const {theme} = useTheme();
   return (
     <>
-      <Link href={`/post/${slug}`}>
+      <Link href={`/posts/${slug}`}>
         <div className="article-preview">
           <div className="article-preview-main">
             <h2 className="title">{`${emoji} ${title}`}</h2>
