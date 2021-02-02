@@ -45,7 +45,7 @@ function PageNotFound(props: NotFoundPageProps): React.ReactElement {
   const renderPostLink = useCallback(
     (post: PostPart, i: number) => (
       <>
-        <Link key={post.slug} href={`/post/${post.slug}`}>
+        <Link key={post.slug} href={`/posts/${post.slug}`}>
           <p className="link">{`${i + 1}. ${post.title}`}</p>
         </Link>
         <style jsx>{`
