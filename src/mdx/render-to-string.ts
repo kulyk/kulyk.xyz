@@ -14,6 +14,7 @@ export function renderToString(
     mdxOptions: {
       ...options?.mdxOptions,
       remarkPlugins: [
+        require('remark-toc'),
         [require('@mavrin/remark-typograf'), {locale: ['en-US']}],
         require('remark-gfm'),
         require('remark-external-links'),
@@ -26,7 +27,7 @@ export function renderToString(
           },
         ],
       ],
-      rehypePlugins: [require('rehype-katex')],
+      rehypePlugins: [require('rehype-slug'), require('rehype-katex')],
     },
   });
 }
