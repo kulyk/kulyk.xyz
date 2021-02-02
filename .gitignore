@@ -18,6 +18,10 @@ yarn-error.log
 .next/
 out/
 
+# env
+#
+.env*
+
 # SEO
 #
 sitemap.xml
