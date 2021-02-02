@@ -1,7 +1,7 @@
 import {Card} from './Card';
 import Emoji from './Emoji';
 
-export type CalloutProps = {
+export type CalloutProps = React.HTMLAttributes<HTMLDivElement> & {
   emoji: {
     name: string;
     value: string;
@@ -16,10 +16,14 @@ const defaultProps = {
   },
 };
 
-export function Callout({children, emoji}: CalloutProps): React.ReactElement {
+export function Callout({
+  children,
+  emoji,
+  ...props
+}: CalloutProps): React.ReactElement {
   return (
     <>
-      <Card className="callout">
+      <Card className="callout" {...props}>
         <div>
           <Emoji name={emoji.name}>{emoji.value}</Emoji>
         </div>
