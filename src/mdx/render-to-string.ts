@@ -19,7 +19,6 @@ export function renderToString(
         require('remark-gfm'),
         require('remark-external-links'),
         require('@fec/remark-a11y-emoji'),
-        require('remark-math'),
         [
           require('remark-prism'),
           {
@@ -27,7 +26,7 @@ export function renderToString(
           },
         ],
       ],
-      rehypePlugins: [require('rehype-slug'), require('rehype-katex')],
+      rehypePlugins: [require('rehype-slug')],
     },
   });
 }
