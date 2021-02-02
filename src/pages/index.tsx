@@ -88,7 +88,6 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          // align-items: center;
         }
         .title {
           flex: 1;
