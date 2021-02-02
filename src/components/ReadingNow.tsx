@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useTheme} from '../theming';
+import {Card} from './Card';
 
 type Book = {
   title: string;
@@ -20,10 +20,9 @@ const BOOKS: Book[] = [
 ];
 
 function ReadingNow(): React.ReactElement {
-  const {theme} = useTheme();
   return (
     <>
-      <section id="reading-now">
+      <Card id="reading-now">
         <h4>📚 Now Reading</h4>
         <ul id="book-list">
           {BOOKS.map((book, i) => (
@@ -34,7 +33,7 @@ function ReadingNow(): React.ReactElement {
             </li>
           ))}
         </ul>
-      </section>
+      </Card>
       <style jsx global>{`
         #reading-now-label {
           display: inline;
@@ -43,9 +42,6 @@ function ReadingNow(): React.ReactElement {
 
         #reading-now {
           margin: 30px 0;
-          padding: 16px 24px;
-          background-color: ${theme.card.background};
-          border-radius: 16px;
         }
 
         #book-list {

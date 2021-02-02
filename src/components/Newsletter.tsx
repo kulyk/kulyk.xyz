@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {useTheme} from '../theming';
+import {Card} from './Card';
 import Emoji from './Emoji';
 
 type ActionState = 'idle' | 'loading' | 'success' | 'error';
@@ -82,7 +83,7 @@ function Newsletter(): React.ReactElement {
 
   return (
     <>
-      <section id="newsletter">
+      <Card id="newsletter">
         <h1>📬 Newsletter</h1>
         <p id="newsletter-message">
           Sign up for my periodic newsletter about software. No spam, no{' '}
@@ -90,7 +91,7 @@ function Newsletter(): React.ReactElement {
         </p>
         {status !== 'success' && renderForm()}
         {(status === 'success' || status === 'error') && renderMessage()}
-      </section>
+      </Card>
       <style jsx global>{`
         h1 {
           display: inline;
@@ -98,9 +99,6 @@ function Newsletter(): React.ReactElement {
 
         #newsletter {
           margin: 30px 0;
-          padding: 16px 24px;
-          background-color: ${theme.card.background};
-          border-radius: 16px;
         }
 
         #newsletter-message {
