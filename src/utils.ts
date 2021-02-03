@@ -13,7 +13,7 @@ export function getUrl(path: string): string {
 }
 
 export function getPostFullUrl(slug: string): string {
-  return getUrl(`post/${slug}`);
+  return getUrl(`posts/${slug}`);
 }
 
 export function formatPubDate(dateISO: string): string {
