@@ -1,4 +1,5 @@
 export type Theme = {
+  name: string;
   background: {
     main: string;
     hover: string;

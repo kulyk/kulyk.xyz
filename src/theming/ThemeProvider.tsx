@@ -12,13 +12,11 @@ import {DarkTheme, LightTheme} from './themes';
 
 type ThemeContextType = {
   theme: Theme;
-  isLight: boolean;
   toggle: () => void;
 };
 
 const ThemeContext = createContext<ThemeContextType>({
   theme: LightTheme,
-  isLight: true,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   toggle: () => {},
 });
@@ -31,35 +29,30 @@ type Props = {
   children: React.ReactNode;
 };
 
+const preferDarkQuery = '(prefers-color-scheme: dark)';
+
 function ThemeProvider(props: Props): React.ReactElement {
   const {children} = props;
   const [theme, setTheme] = useState<Theme>(DarkTheme);
-  const [initialized, setInitialized] = useState<boolean>(false);
-  const [isLight, setIsLight] = useState<boolean>(true);
 
   const toggle = useCallback(() => {
-    const nextTheme = isLight ? DarkTheme : LightTheme;
+    const nextTheme = theme.name === 'dark' ? LightTheme : DarkTheme;
     setTheme(nextTheme);
-    setIsLight(!isLight);
-    localStorage.setItem('theme', isLight ? 'dark' : 'light');
-  }, [isLight]);
+    localStorage.setItem('theme', nextTheme.name);
+  }, [theme]);
 
   useEffect(() => {
-    if (initialized) {
-      return;
-    }
     const prevTheme = localStorage.getItem('theme');
-    const isDark = prevTheme === 'dark';
-    setTheme(isDark ? DarkTheme : LightTheme);
-    setIsLight(!isDark);
-    setInitialized(true);
-  }, [initialized, isLight]);
+    if (prevTheme) {
+      setTheme(prevTheme === 'dark' ? DarkTheme : LightTheme);
+    } else {
+      setTheme(
+        window.matchMedia(preferDarkQuery).matches ? DarkTheme : LightTheme,
+      );
+    }
+  }, []);
 
-  const value = useMemo(() => ({theme, isLight, toggle}), [
-    theme,
-    isLight,
-    toggle,
-  ]);
+  const value = useMemo(() => ({theme, toggle}), [theme, toggle]);
 
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
