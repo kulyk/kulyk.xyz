@@ -15,9 +15,13 @@ const author = {
 };
 
 const feed = new Feed({
-  title: 'Anton Kulyk',
-  description: '',
   id: Config.SITE_URL,
+  title: 'Anton Kulyk',
+  description: [
+    'Anton Kulyk is a full-stack software',
+    'engineer from Kyiv, Ukraine.',
+    'Writing about better ways to build software.',
+  ].join(' '),
   link: Config.SITE_URL,
   language: 'en',
   image: Config.getUrl('me-min.jpg'),
@@ -39,12 +43,13 @@ async function generate(): Promise<void> {
     return new Promise(resolve => {
       renderToString(content, {scope: post}).then(formattedContent => {
         feed.addItem({
-          title: post.title,
           id: post.slug,
+          title: post.title,
           link: getPostFullUrl(post.slug),
           description: post.description,
           content: formattedContent.renderedOutput,
           author: [author],
+          image: Config.getUrl(`banners/${post.banner}`),
           date: new Date(post.publishedAt),
         });
         resolve(true);
