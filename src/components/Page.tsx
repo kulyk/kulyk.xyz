@@ -4,36 +4,15 @@ import {useTheme} from '../theming';
 
 export interface PageProps {
   id?: string;
-  title?: string;
-  description?: string;
   children?: React.ReactNode;
 }
 
-const defaultProps = {
-  description: [
-    'Anton Kulyk is a full-stack software',
-    'engineer from Kyiv, Ukraine.',
-    'Writing about better ways to build software.',
-    'TypeScript, JavaScript, React, React Native, Node.js',
-  ].join(' '),
-};
-
-function getPageTitle(title?: string): string {
-  const base = 'Anton Kulyk';
-  if (!title) {
-    return base;
-  }
-  return `${title} | ${base}`;
-}
-
 function Page(props: PageProps): React.ReactElement {
-  const {title, description, children} = props;
+  const {children} = props;
   const {theme} = useTheme();
   return (
     <>
       <Head>
-        <title>{getPageTitle(title)}</title>
-        {description && <meta name="description" content={description} />}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="preload" as="font" type="font/ttf" href="/fonts/Inter.ttf" />
         <link
@@ -132,7 +111,5 @@ function Page(props: PageProps): React.ReactElement {
     </>
   );
 }
-
-Page.defaultProps = defaultProps;
 
 export default Page;
