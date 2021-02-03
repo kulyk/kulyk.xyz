@@ -3,6 +3,7 @@
 import {Theme} from './types';
 
 export const LightTheme: Theme = {
+  name: 'light',
   background: {
     main: '#fff',
     hover: 'rgba(0, 0, 0, 0.05)',
@@ -42,6 +43,7 @@ export const LightTheme: Theme = {
 };
 
 export const DarkTheme: Theme = {
+  name: 'dark',
   background: {
     main: '#131415',
     hover: 'rgba(58, 58, 60, 0.4)',

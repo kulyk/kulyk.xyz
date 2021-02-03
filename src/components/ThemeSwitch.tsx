@@ -42,11 +42,11 @@ function Light({size = 18}: IconProps): React.ReactElement {
 }
 
 export function ThemeSwitch(): React.ReactElement {
-  const {theme, isLight, toggle} = useTheme();
+  const {theme, toggle} = useTheme();
   return (
     <>
       <button id="theme-toggle" onClick={toggle}>
-        {isLight ? <Dark size={20} /> : <Light size={20} />}
+        {theme.name === 'light' ? <Dark size={20} /> : <Light size={20} />}
       </button>
       <style jsx global>{`
         #theme-toggle {
