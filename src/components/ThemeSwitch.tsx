@@ -45,7 +45,12 @@ export function ThemeSwitch(): React.ReactElement {
   const {theme, toggle} = useTheme();
   return (
     <>
-      <button id="theme-toggle" onClick={toggle}>
+      <button
+        id="theme-toggle"
+        onClick={toggle}
+        aria-label={`Switch to ${
+          theme.name === 'light' ? 'dark' : 'light'
+        } theme`}>
         {theme.name === 'light' ? <Dark size={20} /> : <Light size={20} />}
       </button>
       <style jsx global>{`
