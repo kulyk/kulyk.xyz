@@ -1,6 +1,7 @@
 import {NextPage} from 'next';
 import {NextSeo} from 'next-seo';
-import {Emoji, Layout} from '../components';
+import Emoji from '../components/Emoji';
+import Layout from '../components/Layout';
 import {getUrl} from '../utils';
 
 const About: NextPage<unknown> = () => {
