@@ -35,7 +35,6 @@ async function generate(): Promise<void> {
   const collection = new PostCollectionScripted();
   const posts = await collection.getAllPostsWithContent();
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   posts.forEach(async ({post, content}) => {
     const formattedContent = await renderToString(content, {scope: post});
     feed.addItem({
