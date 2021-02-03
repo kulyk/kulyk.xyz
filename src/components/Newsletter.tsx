@@ -61,7 +61,10 @@ function Newsletter(): React.ReactElement {
             }}
           />
         </div>
-        <button disabled={isDisabled} onClick={onSubmit}>
+        <button
+          disabled={isDisabled}
+          onClick={onSubmit}
+          aria-label="Subscribe to newsletter">
           {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
         </button>
       </div>
