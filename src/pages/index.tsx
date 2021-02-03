@@ -5,7 +5,6 @@ import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
 import Emoji from '../components/Emoji';
 import Layout from '../components/Layout';
-import Newsletter from '../components/Newsletter';
 import ReadingNow from '../components/ReadingNow';
 import Link from '../components/Link';
 
@@ -134,11 +133,10 @@ type HomePageProps = {
 };
 
 const Home: NextPage<HomePageProps> = (props: HomePageProps) => (
-  <Layout>
+  <Layout hasNewsletterSection>
     <Intro />
     <ReadingNow />
     <Articles posts={props.posts} />
-    <Newsletter />
   </Layout>
 );
 

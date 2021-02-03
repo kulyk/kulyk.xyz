@@ -8,13 +8,14 @@ const About: NextPage<unknown> = () => {
   return (
     <>
       <NextSeo
+        title="About"
         canonical={getUrl('about')}
         openGraph={{
           title: 'About',
           url: getUrl('About'),
         }}
       />
-      <Layout title="About">
+      <Layout>
         <h1>
           Hi <Emoji name="wave">👋</Emoji>
         </h1>
