@@ -59,6 +59,8 @@ async function generate(): Promise<void> {
   await Promise.all(promises);
 
   fs.writeFileSync(path.join(DEST, 'feed.xml'), feed.rss2());
+  fs.writeFileSync(path.join(DEST, 'atom.xml'), feed.atom1());
+  fs.writeFileSync(path.join(DEST, 'feed.json'), feed.json1());
 }
 
 generate();
