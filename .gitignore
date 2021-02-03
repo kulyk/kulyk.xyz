@@ -28,4 +28,6 @@ sitemap.xml
 
 # RSS
 #
+atom.xml
 feed.xml
+feed.json
