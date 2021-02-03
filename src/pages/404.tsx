@@ -28,14 +28,13 @@ const FUN_FACTS = [
   '🤓 I wrote my first line of code in Visual Basic when I was 15 y.o',
   '☕ I love filter coffee, I even have a V60 dripper at home',
   '🎸 I play guitar and learn to sing',
-  "😢 I've cried at Liam Gallagher's convert. So I like Oasis more than Blur obviously",
+  "😢 I've cried at Liam Gallagher's concert. So I like Oasis more than Blur obviously",
   '🤓 I choose static typing over dynamic',
   '📺 My favorite TV shows are "Halt and Catch Fire" and "Community"',
-  '🎮 I enjoy playing Call of Duty Mobile. My nickname is pickpickachu',
   "🧳 I've been in 10 countries: 🇺🇦🇵🇱🇫🇮🇸🇪🇪🇪🇩🇪🇫🇷🇪🇸🇮🇹🇬🇪",
   "☢ I've been in Chernobyl and Pripyat",
   "🤦‍♂️ Once I installed TikTok, I've spent 1.5 hours there",
-  "👾 My favorite game is Dragon Age: Origins. Also, I've spent a lot of time playing World of Warcraft when I was a kid (undead warlock!)",
+  "👾 My favorite game is Dragon Age: Origins. Also, I've spent a lot of time playing World of Warcraft when I was a kid (as an undead warlock!)",
   '🎲 My favorite board game is Mansions of Madness',
 ];
 
