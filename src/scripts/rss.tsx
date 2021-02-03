@@ -35,18 +35,23 @@ async function generate(): Promise<void> {
   const collection = new PostCollectionScripted();
   const posts = await collection.getAllPostsWithContent();
 
-  posts.forEach(async ({post, content}) => {
-    const formattedContent = await renderToString(content, {scope: post});
-    feed.addItem({
-      title: post.title,
-      id: post.slug,
-      link: getPostFullUrl(post.slug),
-      description: post.description,
-      content: formattedContent.renderedOutput,
-      author: [author],
-      date: new Date(post.publishedAt),
+  const promises = posts.map(({post, content}) => {
+    return new Promise(resolve => {
+      renderToString(content, {scope: post}).then(formattedContent => {
+        feed.addItem({
+          title: post.title,
+          id: post.slug,
+          link: getPostFullUrl(post.slug),
+          description: post.description,
+          content: formattedContent.renderedOutput,
+          author: [author],
+          date: new Date(post.publishedAt),
+        });
+        resolve(true);
+      });
     });
   });
+  await Promise.all(promises);
 
   fs.writeFileSync(path.join(DEST, 'feed.xml'), feed.rss2());
 }
