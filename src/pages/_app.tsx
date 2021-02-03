@@ -1,11 +1,8 @@
 import {AppProps} from 'next/app';
-import Router from 'next/router';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import withGA from 'next-ga';
 import {DefaultSeo} from 'next-seo';
 import Config from '../config';
 import {ThemeProvider} from '../theming';
+import {useAnalytics} from '../hooks/useAnalytics';
 
 const fonts = [
   "'Inter'",
@@ -18,6 +15,7 @@ const fonts = [
 ];
 
 function App({Component, pageProps}: AppProps): React.ReactElement {
+  useAnalytics();
   return (
     <>
       <DefaultSeo
@@ -94,4 +92,4 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
   );
 }
 
-export default withGA(process.env.NEXT_PUBLIC_ANALYTICS_ID, Router)(App);
+export default App;
