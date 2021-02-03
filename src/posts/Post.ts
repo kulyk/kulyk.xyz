@@ -3,6 +3,6 @@ export interface Post extends Record<string, unknown> {
   emoji: string;
   slug: string;
   banner: string;
-  description?: string;
+  description: string;
   publishedAt: string;
 }
