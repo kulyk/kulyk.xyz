@@ -19,17 +19,25 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
   return (
     <>
       <DefaultSeo
+        titleTemplate="%s | Anton Kulyk"
+        defaultTitle="Anton Kulyk"
+        description={[
+          'Anton Kulyk is a full-stack software',
+          'engineer from Kyiv, Ukraine.',
+          'Writing about better ways to build software.',
+          'TypeScript, JavaScript, React, React Native, Node.js',
+        ].join(' ')}
         canonical={Config.SITE_URL}
         openGraph={{
           type: 'website',
           locale: 'en_US',
           url: Config.SITE_URL,
+          site_name: 'Anton Kulyk',
           images: [
             {
               url: Config.getUrl('banners/main.png'),
             },
           ],
-          site_name: 'Anton Kulyk',
         }}
         twitter={{
           handle: Config.TWITTER_USERNAME,
