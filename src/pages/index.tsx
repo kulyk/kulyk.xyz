@@ -1,5 +1,6 @@
 import {NextPage, GetStaticProps} from 'next';
 import dynamic from 'next/dynamic';
+import {NextSeo} from 'next-seo';
 import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import {useTheme} from '../theming';
@@ -133,11 +134,14 @@ type HomePageProps = {
 };
 
 const Home: NextPage<HomePageProps> = (props: HomePageProps) => (
-  <Layout hasNewsletterSection>
-    <Intro />
-    <ReadingNow />
-    <Articles posts={props.posts} />
-  </Layout>
+  <>
+    <NextSeo title="Home" />
+    <Layout hasNewsletterSection>
+      <Intro />
+      <ReadingNow />
+      <Articles posts={props.posts} />
+    </Layout>
+  </>
 );
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
