@@ -1,6 +1,6 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
 import dynamic from 'next/dynamic';
-import {NextSeo} from 'next-seo';
+import {NextSeo, ArticleJsonLd} from 'next-seo';
 import {
   FacebookIcon,
   FacebookShareButton,
@@ -14,7 +14,6 @@ import {renderToString, MdxSource} from '../../mdx/render-to-string';
 import {useTheme} from '../../theming';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
-import Newsletter from '../../components/Newsletter';
 import {PrismStyle} from '../../components/prismStyle';
 import {getPostFullUrl} from '../../utils';
 
@@ -78,26 +77,31 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
   const {title, description} = post;
   const {theme} = useTheme();
   const postUrl = getPostFullUrl(post.slug);
+  const bannerUrl = Config.getUrl(`banners/${post.banner}`);
   return (
     <>
       <NextSeo
+        title={title}
+        description={description}
         canonical={postUrl}
         openGraph={{
           title,
           description,
-          type: 'website',
-          locale: 'en_US',
           url: postUrl,
-          site_name: 'Anton Kulyk',
-          images: [{url: Config.getUrl(`banners/${post.banner}`)}],
-        }}
-        twitter={{
-          handle: '@anton_kulyk',
-          site: '@anton_kulyk',
-          cardType: 'summary_large_image',
+          images: [{url: bannerUrl}],
         }}
       />
-      <Layout title={title} description={description}>
+      <ArticleJsonLd
+        title={title}
+        description={description}
+        url={postUrl}
+        images={[bannerUrl]}
+        datePublished={post.publishedAt}
+        authorName="Anton Kulyk"
+        publisherName="Anton Kulyk"
+        publisherLogo={Config.getUrl('me-min.jpg')}
+      />
+      <Layout hasNewsletterSection>
         <h1>{title}</h1>
         <div className="about-article">
           <h3 className="description secondary">{description}</h3>
@@ -105,7 +109,6 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         </div>
         <article id="post">{hydrate(content)}</article>
         <ShareSection url={postUrl} />
-        <Newsletter />
       </Layout>
       <style jsx global>{`
         .about-article {

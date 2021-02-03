@@ -2,13 +2,14 @@
 
 import {useCallback} from 'react';
 import {GetStaticProps} from 'next';
+import {NextSeo} from 'next-seo';
 import Terminal from 'react-console-emulator';
 import Config from '../config';
 import {PostCollection, Post} from '../posts';
 import Emoji from '../components/Emoji';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
-import {getRandomListItem} from '../utils';
+import {getUrl, getRandomListItem} from '../utils';
 
 type PostPart = Pick<Post, 'title' | 'slug'>;
 
@@ -82,7 +83,17 @@ function PageNotFound(props: NotFoundPageProps): React.ReactElement {
 
   return (
     <>
-      <Layout title="Page Not Found" hasNewsletterSection={false}>
+      <NextSeo
+        title="About"
+        canonical={getUrl('about')}
+        openGraph={{
+          title: 'About',
+          url: getUrl('About'),
+        }}
+        noindex
+        nofollow
+      />
+      <Layout hasNewsletterSection={false}>
         <div id="container-404">
           <p id="emoji-404">
             <Emoji name="sad">😔</Emoji>
