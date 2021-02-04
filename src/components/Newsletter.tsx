@@ -88,7 +88,7 @@ function Newsletter(): React.ReactElement {
     <>
       <Card id="newsletter">
         <h2>
-          <Emoji id="letterbox" name="letterbox" size="1.2rem">
+          <Emoji id="letterbox" name="letterbox" size="1.5rem">
             📬
           </Emoji>
           Newsletter
