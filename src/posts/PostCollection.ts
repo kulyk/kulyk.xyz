@@ -3,7 +3,8 @@ import path from 'path';
 import {promisify} from 'util';
 import glob from 'glob';
 import matter from 'gray-matter';
-import {compareDesc, parseISO} from 'date-fns';
+import compareDesc from 'date-fns/compareDesc';
+import parseISO from 'date-fns/parseISO';
 import {Post} from './Post';
 
 const readFileAsync = promisify(fs.readFile);

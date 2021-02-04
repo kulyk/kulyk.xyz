@@ -68,13 +68,18 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
       <Link href={`/posts/${slug}`}>
         <div className="article-preview">
           <div className="article-preview-main">
-            <h2 className="title">{`${emoji} ${title}`}</h2>
+            <h2 className="title">
+              <Emoji name="" className="article-emoji">
+                {emoji}
+              </Emoji>
+              {title}
+            </h2>
             <PublishedAt publishedAt={publishedAt} />
           </div>
           <p className="secondary description">{description}</p>
         </div>
       </Link>
-      <style jsx>{`
+      <style jsx global>{`
         .article-preview {
           padding: 10px;
           margin: 8px 0 8px 0;
@@ -93,6 +98,9 @@ function ArticlePreview(props: ArticlePreviewProps): React.ReactElement {
           flex: 1;
           font-weight: 500;
           font-size: 1.2rem;
+        }
+        .article-emoji {
+          padding-right: 4px;
         }
         .description {
           margin-top: 8px;
