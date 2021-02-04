@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Card} from './Card';
+import Emoji from './Emoji';
 
 type Book = {
   title: string;
@@ -23,7 +24,9 @@ function ReadingNow(): React.ReactElement {
   return (
     <>
       <Card id="reading-now">
-        <h4>📚 Now Reading</h4>
+        <h4>
+          <Emoji name="books">📚</Emoji> Now Reading
+        </h4>
         <ul id="book-list">
           {BOOKS.map((book, i) => (
             <li key={i}>

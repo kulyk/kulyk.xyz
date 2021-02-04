@@ -87,7 +87,12 @@ function Newsletter(): React.ReactElement {
   return (
     <>
       <Card id="newsletter">
-        <h1>📬 Newsletter</h1>
+        <h2>
+          <Emoji id="letterbox" name="letterbox" size="1.2rem">
+            📬
+          </Emoji>
+          Newsletter
+        </h2>
         <p id="newsletter-message">
           Sign up for my periodic newsletter about software. No spam, no{' '}
           <Emoji name="shit">💩</Emoji>
@@ -96,8 +101,12 @@ function Newsletter(): React.ReactElement {
         {(status === 'success' || status === 'error') && renderMessage()}
       </Card>
       <style jsx global>{`
-        h1 {
+        #newsletter > h2 {
           display: inline;
+        }
+
+        #letterbox {
+          padding-right: 6px;
         }
 
         #newsletter {
