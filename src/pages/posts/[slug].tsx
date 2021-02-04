@@ -1,12 +1,6 @@
 import {NextPage, GetStaticPaths, GetStaticProps} from 'next';
 import dynamic from 'next/dynamic';
 import {NextSeo, ArticleJsonLd} from 'next-seo';
-import {
-  FacebookIcon,
-  FacebookShareButton,
-  TwitterIcon,
-  TwitterShareButton,
-} from 'react-share';
 import Config from '../../config';
 import {PostCollection, Post as PostType} from '../../posts';
 import {hydrate} from '../../mdx/hydrate';
@@ -14,6 +8,10 @@ import {renderToString, MdxSource} from '../../mdx/render-to-string';
 import {useTheme} from '../../theming';
 import Emoji from '../../components/Emoji';
 import Layout from '../../components/Layout';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+} from '../../components/ShareButtons';
 import {PrismStyle} from '../../components/prismStyle';
 import {getPostFullUrl} from '../../utils';
 
@@ -35,12 +33,8 @@ function ShareSection({url}: {url: string}): React.ReactElement {
             <Emoji name="pray">🙏</Emoji>
           </p>
           <div>
-            <TwitterShareButton url={url} style={{marginRight: 16}}>
-              <TwitterIcon size={40} round />
-            </TwitterShareButton>
-            <FacebookShareButton url={url}>
-              <FacebookIcon size={40} round />
-            </FacebookShareButton>
+            <TwitterShareButton url={url} style={{marginRight: 16}} />
+            <FacebookShareButton url={url} />
           </div>
         </div>
       </section>
