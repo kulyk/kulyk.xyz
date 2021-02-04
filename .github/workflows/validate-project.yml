@@ -22,4 +22,4 @@ jobs:
       - name: Validate project
         run: yarn validate-project
       - name: Run Lighthouse Audit
-        run: npx lhci autorun
+        run: lhci autorun
