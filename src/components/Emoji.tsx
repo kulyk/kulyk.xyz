@@ -49,18 +49,7 @@ function Emoji(props: Props): React.ReactElement {
   const finalClassName = classNames('emoji', className);
   const label = `${name} emoji`;
 
-  if (typeof window === 'undefined') {
-    return (
-      <span
-        role="img"
-        aria-label={label}
-        className={finalClassName}
-        {...rest}
-      />
-    );
-  }
-
-  if (isAppleDevice() || !TWEEMOJI[children]) {
+  if (typeof window === 'undefined' || isAppleDevice() || !TWEEMOJI[children]) {
     return (
       <>
         <span
