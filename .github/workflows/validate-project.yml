@@ -18,8 +18,6 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
       - name: Install dependencies
-        run: yarn --non-interactive --silent --frozen-lockfile && yarn global add @lhci/cli@0.7.x
+        run: yarn --non-interactive --silent --frozen-lockfile
       - name: Validate project
         run: yarn validate-project
-      - name: Run Lighthouse Audit
-        run: lhci autorun
