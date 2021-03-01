@@ -23,7 +23,7 @@
     "@mavrin/remark-typograf": "^2.1.6",
     "@zeit/next-source-maps": "^0.0.3",
     "classnames": "^2.2.6",
-    "csstype": "^3.0.6",
+    "csstype": "^3.0.7",
     "date-fns": "^2.17.0",
     "fathom-client": "^3.0.0",
     "feed": "^4.2.2",
