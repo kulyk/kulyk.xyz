@@ -12,7 +12,7 @@ const About: NextPage<unknown> = () => {
         canonical={getUrl('about')}
         openGraph={{
           title: 'About',
-          url: getUrl('About'),
+          url: getUrl('about'),
         }}
       />
       <Layout>
