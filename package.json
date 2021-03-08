@@ -19,7 +19,7 @@
     "validate-project": "npm-run-all check-types check-format lint export"
   },
   "dependencies": {
-    "@fec/remark-a11y-emoji": "^3.0.0",
+    "@fec/remark-a11y-emoji": "^3.1.0",
     "@mavrin/remark-typograf": "^2.1.6",
     "@zeit/next-source-maps": "^0.0.3",
     "classnames": "^2.2.6",
