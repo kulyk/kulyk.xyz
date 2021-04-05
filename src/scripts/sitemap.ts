@@ -20,7 +20,7 @@ sitemap({
     'ttf',
     'webmanifest',
   ],
-  ignoredPaths: ['index', '404'],
+  ignoredPaths: ['index', '404', '500'],
   pagesDirectory: path.join(BASE_DIR, '/.next/server/pages'),
   targetDirectory: DEST,
   nextConfigPath: path.join(BASE_DIR, 'next.config.js'),
