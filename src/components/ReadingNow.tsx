@@ -13,11 +13,6 @@ const BOOKS: Book[] = [
     url:
       'https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598',
   },
-  {
-    title: 'Blood, Sweat, and Pixels',
-    url:
-      'https://www.amazon.com/Blood-Sweat-Pixels-Triumphant-Turbulent/dp/0062651234',
-  },
 ];
 
 function ReadingNow(): React.ReactElement {
