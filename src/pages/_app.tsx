@@ -5,9 +5,9 @@ import {ThemeProvider} from '../theming';
 import {useAnalytics} from '../hooks/useAnalytics';
 
 const fonts = [
-  "'Inter'",
   '-apple-system',
   'BlinkMacSystemFont',
+  "'Inter'",
   "'Helvetica Neue'",
   "'Helvetica'",
   "'Arial'",
@@ -54,6 +54,7 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
           margin: 0;
           padding: 0;
           font-family: ${fonts.join(', ')};
+          -webkit-font-smoothing: antialiased;
           font-display: swap;
         }
 
