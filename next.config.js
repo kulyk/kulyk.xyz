@@ -1,6 +1,7 @@
 const withPlugins = require('next-compose-plugins');
 const withSourceMaps = require('@zeit/next-source-maps');
 const withBundleAnalyzer = require('@next/bundle-analyzer');
+const withPreact = require('next-plugin-preact');
 
 const config = {
   webpack: function (config) {
@@ -38,7 +39,7 @@ const config = {
   },
 };
 
-const plugins = [withSourceMaps];
+const plugins = [withPreact, withSourceMaps];
 
 if (process.env.ANALYZE === 'true') {
   plugins.push(withBundleAnalyzer({enabled: true}));
