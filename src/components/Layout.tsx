@@ -23,7 +23,7 @@ const defaultProps = {
 };
 
 const NAV_BAR_HEIGHT = 60;
-const WIDTH = '700px';
+const WIDTH = '600px';
 
 function Layout(props: LayoutProps): React.ReactElement {
   const {

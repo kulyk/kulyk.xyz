@@ -5,6 +5,7 @@ import {ThemeProvider} from '../theming';
 import {useAnalytics} from '../hooks/useAnalytics';
 
 const fonts = [
+  'Inter',
   '-apple-system',
   'BlinkMacSystemFont',
   "'Inter'",
@@ -67,6 +68,7 @@ function App({Component, pageProps}: AppProps): React.ReactElement {
         p {
           margin: 0;
           padding: 0;
+          color: rgb(224, 224, 222);
         }
 
         a {

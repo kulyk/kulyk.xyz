@@ -15,7 +15,7 @@ import {
 import {PrismStyle} from '../../components/prismStyle';
 import {getPostFullUrl} from '../../utils';
 
-const LINE_HEIGHT = 1.65;
+const LINE_HEIGHT = 1.6;
 
 const PublishedAt = dynamic(() => import('../../components/PublishedAt'), {
   ssr: false,
@@ -115,10 +115,11 @@ const Post: NextPage<PostPageProps> = (props: PostPageProps) => {
         .description {
           display: flex;
           flex: 0.9;
+          font-weight: normal;
         }
 
         #post {
-          margin-top: 20px;
+          margin-top: 60px;
         }
 
         #post > h1,
