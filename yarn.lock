@@ -1093,14 +1093,14 @@
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-"@mavrin/remark-typograf@^2.1.6":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@mavrin/remark-typograf/-/remark-typograf-2.1.6.tgz#6f0e713ea59efa0989c05c2b8a8effddd726089e"
-  integrity sha512-6fOVtmX7U1ytwYJh9pd8HbDq2T4SodVkp6bZpe6aYfnieHlujvmyBMtogl+TkA8rPX3BEhNEBCDG07Kesk8y9Q==
+"@mavrin/remark-typograf@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@mavrin/remark-typograf/-/remark-typograf-2.2.0.tgz#4afc3502ce5a3570c64ca8708b21162b92fbf7ef"
+  integrity sha512-YzIIzPCIbycuzQn75zVslpK1uUC60qVxG+NlmtWMB1G2hsRGJu6JZhlldo32e8DiaAALr+dnndXLWv0sH1tSCw==
   dependencies:
     lodash.escaperegexp "^4.1.2"
-    typograf "^6.11.0"
-    unist-util-visit "^2.0.2"
+    typograf "^6.11.3"
+    unist-util-visit "^2.0.3"
 
 "@mdx-js/mdx@^1.6.22":
   version "1.6.22"
@@ -6066,10 +6066,10 @@ typescript@^4.3.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
   integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
 
-typograf@^6.11.0:
-  version "6.11.3"
-  resolved "https://registry.yarnpkg.com/typograf/-/typograf-6.11.3.tgz#4c88ccfe60a0d362d93488ce62378510b3f19bfe"
-  integrity sha512-aj+FLX8mc9BaWHQeSB1dk7Om7Ag4dGx+rl5jpO6QdpMUKcwqffhFjGAki/SAzsjbUZKUGHXJgaYUcUD6z3eSJg==
+typograf@^6.11.3:
+  version "6.12.0"
+  resolved "https://registry.yarnpkg.com/typograf/-/typograf-6.12.0.tgz#41956f5eebb5dbacc668c8a6aa3e15ef524ee987"
+  integrity sha512-wf/UZiQqGjocvouTNuvNdC2ufnkI7P1kxQkKGNc5/Yz4w4y2w8kBLdUObteSEi69Ry271+6Vrm4eKyg4U5hY4g==
 
 unbox-primitive@^1.0.0, unbox-primitive@^1.0.1:
   version "1.0.1"
@@ -6181,7 +6181,7 @@ unist-util-visit-parents@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^4.0.0"
 
-unist-util-visit@2.0.3, unist-util-visit@^2.0.0, unist-util-visit@^2.0.2, unist-util-visit@^2.0.3:
+unist-util-visit@2.0.3, unist-util-visit@^2.0.0, unist-util-visit@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.3.tgz#c3703893146df47203bb8a9795af47d7b971208c"
   integrity sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==
