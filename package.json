@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@fec/remark-a11y-emoji": "^3.1.0",
-    "@mavrin/remark-typograf": "^2.1.6",
+    "@mavrin/remark-typograf": "^2.2.0",
     "@zeit/next-source-maps": "^0.0.3",
     "classnames": "^2.3.1",
     "csstype": "^3.0.8",
