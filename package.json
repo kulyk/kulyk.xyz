@@ -27,7 +27,7 @@
     "date-fns": "^2.22.1",
     "fathom-client": "^3.0.0",
     "feed": "^4.2.2",
-    "glob": "^7.1.6",
+    "glob": "^7.1.7",
     "gray-matter": "^4.0.3",
     "next": "^10.2.3",
     "next-compose-plugins": "^2.2.1",
